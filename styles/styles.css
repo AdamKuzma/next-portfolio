@@ -1,0 +1,82 @@
+/* Home */
+
+.intro-header {
+    font-family: 'PP Mondwest', sans-serif;
+    font-size: 56px;
+    line-height: 110%;
+    color: var(--text-primary);
+  }
+
+  .intro-description {
+    color: var(--text-primary);
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+
+/* Navigation */
+
+.navigationWrapper {
+    position: fixed;
+    bottom: 42px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .navigation {
+    background: var(--menu-bg);
+    border: solid 1px var(--stroke);
+    border-radius: 40px;
+    text-align: center;
+    padding: 5px 6px;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, .05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    white-space: nowrap;
+    height: auto; /* Ensure height adjusts to content */
+  }
+
+  .navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .navigation ul li {
+    display: list-item;
+  }
+
+  .navigationItem a, .navigation ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px 24px;
+    border-radius: 40px;
+    height: auto;
+    color: var(--text-primary);
+    display: inline-block;
+  }
+
+  .navigationHover, .navigation ul li a:hover {
+    background-color: var(--background-secondary);
+  }
+
+  .themeToggle {
+    padding: 0px;
+  }
+
+  .themeToggle button {
+    padding: 6px 14px;
+  }
+
+  .iconContainer {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }

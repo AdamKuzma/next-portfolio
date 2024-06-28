@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-primary: #FFF;
+  --background-secondary: #F4F4F5;
+  --text-primary: #000;
+  --text-body: #2a2a2a;
+  --gray: #EEEFF2;
+  --text-secondary: #A1A1AA;
+  --text-tertiary: #A1A1AA;
+  --stroke: #E5E5E5;;
+  --menu-bg: rgba(255, 255, 255, 0.98);
+  transition: all 0.2s ease-in-out;
+}
+
+h1 {
+  font-family: 'PP Mondwest', sans-serif;
+  font-size: 96px;
+}
+
+h2 {
+  font-family: 'PP Mondwest', sans-serif;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  font-family: Inter;
+  line-height: 1.65;
+  font-size: 15px;
+}
+
+b {
+  font-weight: 600;
+}
+
+
+/* Animation */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s forwards;
+  opacity: 0;
+}
+
+
+.container {
+  width: 920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Delay classes */
+
+.delay-0 {
+  animation-delay: 0s;
+}
+
+.delay-1 {
+  animation-delay: 0.05s;
+}
+
+.delay-2 {
+  animation-delay: 0.1s;
+}
+
+.delay-3 {
+  animation-delay: 0.15s;
+}
+
+.delay-4 {
+  animation-delay: 0.2s;
+}
+
+.delay-5 {
+  animation-delay: 0.25s;
+}
+
+.delay-6 {
+  animation-delay: 0.3s;
+}
