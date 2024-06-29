@@ -4,7 +4,7 @@ import Link from 'next/link';
 function ProjectCard({ title, description, mediaType, mediaSrc, linkUrl, className }) {
   return (
 
-    <div className='mt-14 lg:mt-24'>
+    <div className=''>
       <Link href={linkUrl}>
         <div className={`card-container ${className}`}>
           {mediaType === 'image' ? (

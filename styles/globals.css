@@ -26,28 +26,26 @@
 
 :root.dark {
   --background-primary: #111110;
-  --background-secondary: #121314;
+  --background-secondary: #1D1D1D;
   --text-primary: #EEEEEC;
   --text-body: #EEEEEC;
   --text-secondary: #B5B3AD;
-  --text-tertiary: #B5B3AD;
   --stroke: #282828;
   --gray: #282828;
+  --gray1: #393939;
   --menu-bg: rgba(31,31,31,.7);
-  transition: all 0.2s ease-in-out;
 }
 
 :root.light {
-  --background-primary: #FFF;
+  --background-primary: #fff;
   --background-secondary: #F4F4F5;
   --text-primary: #000;
   --text-body: #2a2a2a;
-  --gray: #EEEFF2;
   --text-secondary: #A1A1AA;
-  --text-tertiary: #A1A1AA;
-  --stroke: #E5E5E5;;
+  --stroke: #E5E5E5;
+  --gray: #EEEFF2;
+  --gray1: #ced0d4;
   --menu-bg: hsla(0, 0%, 99%, 0.65);
-  transition: all 0.2s ease-in-out;
 }
 
 :root.dark #icon-sun {
@@ -76,7 +74,6 @@ h2 {
 }
 
 body {
-  transition: background-color 0.3s, color 0.3s;
   background-color: var(--background-primary);
   color: var(--text-primary);
   font-family: Inter;
@@ -94,6 +91,10 @@ ul {
 
 ul li::marker {
   color: var(--stroke);
+}
+
+p {
+  color: var(--text-body);
 }
 
 
@@ -119,7 +120,7 @@ ul li::marker {
 
 
 .container {
-  width: 920px;
+  width: 880px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;

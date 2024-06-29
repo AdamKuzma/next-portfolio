@@ -31,7 +31,7 @@ const TypingAnimation = () => {
         index2.current++;
         setTimeout(typeLine2, typingSpeed);
       } else {
-        
+
       }
     };
 

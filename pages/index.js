@@ -8,7 +8,7 @@ const Home = () => (
   <>
     <main>
       <div className='container'>
-        <div className='h-screen'>
+        <div className='mb-44 lg:mb-0 lg:h-screen'>
         <TypingAnimation />
         {/*}
           <h1 className='mt-44 lg:mt-64 intro-header fade-in delay-0'>

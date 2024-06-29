@@ -78,15 +78,18 @@
 }
 
 .project-tags div {
-  border: 1px var(--text-primary) solid;
-  border-radius: 20px;
+  /*border: 1px var(--text-primary) solid; */
+  background-color: var(--background-secondary);
+  color: var(--text-body);
+  border-radius: 8px;
   padding: 2px 12px;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .annotation {
   color: var(--text-secondary);
 }
+
 
 /* Contact */
 
@@ -125,6 +128,7 @@
     height: 2px; /* Adjust thickness */
     background-color: var(--gray); /* Match the text color */
     z-index: -1;
+    transition: background-color 0.12s;
   }
 
   .link:hover::after {
@@ -134,8 +138,9 @@
     bottom: 2px; /* Adjust as necessary */
     width: 100%;
     height: 2px; /* Adjust thickness */
-    background-color: var(--text-secondary); /* Match the text color */
+    background-color: var(--gray1); /* Match the text color */
     z-index: -1;
+    transition: background-color 0.12s;
   }
 
 /********* Typing Effect ********/

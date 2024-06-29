@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import ProjectHeader from '../../components/ProjectHeader';
 import SayHi from '../../components/SayHi';
 
 function DigitalStoreSystem() {
+
+  const videoRefs = useRef([]);
+
+    useEffect(() => {
+      videoRefs.current.forEach(video => {
+        if (video) {
+          video.play().catch(error => {
+            console.error('Error attempting to play', error);
+          });
+        }
+      });
+    }, []);
+
   return (
     <div className='container mx-auto'>
       <ProjectHeader
@@ -14,8 +27,10 @@ function DigitalStoreSystem() {
 
       {/* Project Intro */}
 
-      <div className='mb-12 py-4 pr-4 fade-in delay-2 bg-[#F2F2F4] rounded-lg'>
-        <img className='w-full h-auto object-contain rounded-lg' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FClienteling%20Intro.png?alt=media&token=0bef73d6-0d7e-4676-b6c9-568a8bf1bb30" alt="Digital Store System" />
+      <div className='mb-8 lg:mb-16 py-3 px-3 lg:py-0 lg:px-28 bg-[#F4F4F5] fade-in delay-2 rounded-lg'>
+            <video className='' ref={el => videoRefs.current[0] = el} muted autoplay loop>
+                <source type='video/mp4' src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20-%20Featured%201.mp4?alt=media&token=23bf42c3-4a5a-4674-992e-f8c07a59d22c'></source>
+            </video>
       </div>
 
       <b className='mb-4 block fade-in delay-3'>Context</b>
@@ -23,11 +38,11 @@ function DigitalStoreSystem() {
         Jewelry experts at Signet’s stores use the Clienteling iPad app to build stronger relationships with customers. Customer outreach is one of the most frequently performed tasks in-store. 
       </p>
 
-      <p className='mb-8 lg:w-3/5 fade-in delay-4'>
+      <p className='mb-8 lg:mb-16 lg:w-3/5 fade-in delay-4'>
         Jewelry experts would typically use Clienteling’s customer search filters to find specific customers or customer segments for targeted communication and reach out to them via email or schedule a reminder to contact them at a later time - for example to promote a new line of engagement rings to customers who would potentially be interested.
       </p>
 
-      <div className='mb-12 bg-[#F2F2F4] rounded-lg px-12 py-6'>
+      <div className='mb-12 px-12 py-6 lg:px-56 lg:py-16 bg-[#F2F2F4] rounded-lg'>
         <img className='w-full h-auto object-contain rounded-lg' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FClienteling%20Context.png?alt=media&token=d77d10bb-5364-44c3-af58-43676044aa6a" alt="Digital Store System" />
       </div>
 
@@ -38,11 +53,11 @@ function DigitalStoreSystem() {
         As the search capabilities kept evolving and new filters kept getting added, their organization started to become unintuitive. New Jewelry Experts faced a steep learning curve, while experienced JEs asked for more filtering options. Many of the frequently used filters were hidden under the second navigation level, which led to poor discoverability.
       </p>
 
-      <p className='mb-8 lg:w-3/5'>
+      <p className='mb-8 lg:mb-16 lg:w-3/5'>
         Once the filters for a specific customer segment were applied, there was no visibility to the contact method each customer was opted into, meaning the JEs would often find out that some of the selected customers don’t have an email address in their records.
       </p>
 
-      <div className='mb-12 bg-[#F2F2F4] rounded-lg px-6 py-6'>
+      <div className='mb-12 px-6 py-6 lg:px-44 lg:py-16 bg-[#F2F2F4] rounded-lg'>
         <img className='w-full h-auto object-contain rounded-lg' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FClienteling%20-%20Current%20Filters.png?alt=media&token=90228814-411d-4477-8d71-eff32cc3a03e" alt="Digital Store System" />
       </div>
 
@@ -61,11 +76,11 @@ function DigitalStoreSystem() {
         Thinking in the larger context, I also streamlined outreach and creating outreach reminders by brining visibility to available contact methods to inform decision-making and remove unnecessary steps.
       </p>
 
-      <p className='mb-6 lg:w-3/5'>
+      <p className='mb-8 lg:mb-16 lg:w-3/5'>
         After testing two design variants with Jewelry Experts in-store, we’ve taken the features that tested positively to inform the final designs below.
       </p>
 
-      <div className='mb-8 py-4 px-6 fade-in delay-2 bg-[#F2F2F4] rounded-lg'>
+      <div className='mb-8 lg:mb-16 py-4 px-6 lg:px-44 lg:py-16 bg-[#F2F2F4] rounded-lg'>
         <img className='w-full h-auto object-contain' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FClienteling%20Filters.png?alt=media&token=a9f1bdda-d9f4-4bc1-875c-f07004775abe" alt="Digital Store System" />
       </div>
 
@@ -83,7 +98,7 @@ function DigitalStoreSystem() {
 
       {/* Search Bar */}
 
-      <div className='mt-4 mb-3 bg-[#F2F2F4] pt-6 px-6 rounded-lg'>
+      <div className='mt-4 mb-3 pt-6 px-6 lg:px-32 lg:pt-16 bg-[#F2F2F4] rounded-lg'>
         <img className='w-full h-auto object-contain' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20Search.png?alt=media&token=0fc8d96b-c587-4f8f-9afe-543a14033676" alt="Digital Store System" />
       </div>
       <p className='mb-8 annotation text-sm'>Search bar</p>
@@ -95,7 +110,7 @@ function DigitalStoreSystem() {
 
       {/* New Filter Drawer */}
 
-      <div className='mt-4 mb-3 bg-[#F2F2F4] pt-6 px-6 rounded-lg'>
+      <div className='mt-4 mb-3 pt-6 px-6 lg:px-32 lg:pt-16 bg-[#F2F2F4] rounded-lg'>
         <img className='w-full h-auto object-contain' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20Select%20Filters.png?alt=media&token=867d57aa-1044-4666-b406-ea84125b5824" alt="Digital Store System" />
       </div>
       <p className='mb-8 annotation text-sm'>New filter drawer</p>
@@ -107,7 +122,7 @@ function DigitalStoreSystem() {
 
       {/* Contact Methods */}
 
-      <div className='mt-4 mb-3 pb-8 px-6 bg-[#F2F2F4] rounded-lg'>
+      <div className='mt-4 mb-3 pb-8 px-6 lg:px-32 lg:pb-16 bg-[#F2F2F4] rounded-lg'>
         <img className='w-full h-auto object-contain' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20Contact%20Methods.png?alt=media&token=133b9095-007b-46b6-af2b-057277fe1392" alt="Digital Store System" />
       </div>
       <p className='mb-8 annotation text-sm'>Contact methods</p>
@@ -124,7 +139,7 @@ function DigitalStoreSystem() {
       {/* Multiple Filers */}
 
 
-      <div className='mt-4 mb-3 px-6 py-6 bg-[#F2F2F4] rounded-lg'>
+      <div className='mt-4 mb-3 px-6 py-6 lg:px-40 lg:py-12 bg-[#F2F2F4] rounded-lg'>
         <img className='w-full h-auto object-contain rounded-lg' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20Multiple%20Filters.png?alt=media&token=7992cb03-b341-45be-898c-40edf070df7c" alt="Digital Store System" />
       </div>
       <p className='mb-8 annotation text-sm'>Faceted filters</p>
@@ -137,7 +152,7 @@ function DigitalStoreSystem() {
       {/* Last Outreach */}
 
 
-      <div className='mt-4 mb-3 px-6 py-6 bg-[#F2F2F4] rounded-lg'>
+      <div className='mt-4 mb-3 px-6 py-6 lg:px-40 lg:py-12 bg-[#F2F2F4] rounded-lg'>
         <img className='w-full h-auto object-contain rounded-lg' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20Last%20Outreach.png?alt=media&token=52d1a1df-f35e-47bd-8599-e874f12b9be7" alt="Digital Store System" />
       </div>
       <p className='mb-8 annotation text-sm'>Last outreach filter</p>
@@ -160,7 +175,9 @@ function DigitalStoreSystem() {
       */}
 
       {/* Takeaways */}
-
+      <div className='mb-12 pt-12 px-28 lg:px-[34%] lg:pt-24 bg-[#F2F2F4] rounded-lg'>
+        <img className='w-full h-auto object-contain rounded-lg' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20Icon.png?alt=media&token=9ed1018c-8bce-4c66-92ae-de4f47c60592" alt="Digital Store System" />
+      </div>
 
       <b className='mb-4 block'>Takeaways</b>
       <p className='mb-4 lg:w-3/5'>

@@ -28,11 +28,11 @@ function MemberRewards() {
 
         {/* Project Intro */}
 
-        <p className='mb-8 fade-in delay-2 w-3/5'>
+        <p className='mb-8 fade-in delay-2 lg:w-3/5'>
             The introduction of the Member Rewards initiative marks a significant enhancement to our loyalty program, allowing members to earn shopping credits. These credits can be applied to their purchase, complementing existing promo codes and fostering a more rewarding shopping experience.
         </p>
 
-        <p className='mb-8 fade-in delay-3 w-3/5'>
+        <p className='mb-8 fade-in delay-3 lg:w-3/5'>
             I conducted an audit of our apps, mapping all of the styles, spacings, treatments, and components we were using. Next, I developed a comprehensive system that was minimal enough to converge all the inconsistencies into fewer styles and components, while still being simple to use for our designers.
         </p>
 
@@ -55,7 +55,7 @@ function MemberRewards() {
       {/* Gathering Requirements */}
 
       <b className='mb-4 block'>Gathering the Requirements</b>
-      <p className='mb-8 w-3/5 fade-in delay-2'>
+      <p className='mb-8 lg:w-3/5 fade-in delay-2'>
         We started with a comprehensive analysis of the new program’s requirements. Engaging with cross-functional teams, we crafted a detailed project brief, identified potential challenges, and outlined key design considerations.
       </p>
 
@@ -67,10 +67,10 @@ function MemberRewards() {
       {/* Structuring the Experience */}
 
       <b className='mb-4 block'>Structuring the Experience</b>
-      <p className='mb-8 w-3/5 fade-in delay-2'>
+      <p className='mb-8 lg:w-3/5 fade-in delay-2'>
         To make sense of the complex project requirements, I started exploring the potential user flows considering all the possible scenarios that depend on different variables.
       </p>
-      <p className='mb-8 w-3/5 fade-in delay-2'>
+      <p className='mb-8 lg:w-3/5 fade-in delay-2'>
         Factors such as membership status, authenticated state, exclusions, order total, items in the bag, applied promos, promo hierarchy, and rewards expiration would all result in a different experience for the user.
       </p>
 
@@ -81,13 +81,13 @@ function MemberRewards() {
       {/* Exploring Ideas */}
 
       <b className='mb-4 block'>Exploring Ideas</b>
-      <p className='mb-8 w-3/5 fade-in delay-2'>
+      <p className='mb-8 lg:w-3/5 fade-in delay-2'>
         Despite all the internal complexity, I wanted to create an experience as simple as possible for the end user, minimizing the friction before proceeding to checkout.
       </p>
-      <p className='mb-8 w-3/5 fade-in delay-2'>
+      <p className='mb-8 lg:w-3/5 fade-in delay-2'>
         I explored different ideas through the lens of previously identified scenarios, highlighting the pros and cons of the user experience and technical debt.
       </p>
-      <p className='mb-8 w-3/5 fade-in delay-2'>
+      <p className='mb-8 lg:w-3/5 fade-in delay-2'>
         With a tight timeline for the MVP release, I needed to design for an easy implementation. Some of the best user experiences required complex calculations and were not feasible in the short term, so we decided to put them out for the future and settle with alternative solutions.
       </p>
 
@@ -106,14 +106,14 @@ function MemberRewards() {
 
       {/* Applying Rewards */}
 
-      <div className='flex gap-16 mb-14 mt-14 '>
-        <div className='w-1/2'>
+      <div className='lg:flex lg:gap-16 mb-14 mt-14 '>
+        <div className='lg:w-1/2'>
             <b className='mb-4 block'>Selecting Rewards</b>
             <p className='mb-8 fade-in delay-2'>
                 Customers with multiple promos available can either choose the best combination of promos and Rewards shown up front or make their selection within a drawer. It was important to visually communicate that only one promo code can be applied per order, while the Rewards can be redeemed in increments of one dollar.
             </p>
         </div>
-        <div className='w-1/2 py-12 px-24 bg-neutral-100 rounded-xl'>
+        <div className='lg:w-1/2 py-12 px-24 bg-neutral-100 rounded-xl'>
             <video className='rounded-[36px]' ref={el => videoRefs.current[0] = el} muted autoplay loop>
                 <source type='video/mp4' src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FApply-Rewards-cut.mp4?alt=media&token=92a8076f-bc61-42bd-b2e7-54539440ef57'></source>
             </video>
@@ -123,14 +123,14 @@ function MemberRewards() {
 
       {/* Selecting Rewards */}
 
-      <div className='flex gap-20 mb-14 mt-14 '>
-        <div className='w-1/2'>
+      <div className='lg:flex lg:gap-20 mb-14 mt-14 '>
+        <div className='lg:w-1/2'>
             <b className='mb-4 block'>Applying Rewards</b>
             <p className='mb-8fade-in delay-2'>
                 In the final experience, loyalty members can easily view their most valuable promos and Rewards based on the items in their shopping bag. Toggling a switch applies the Rewards with all the discounts reflected under the Order Total.
             </p>
         </div>
-        <div className='w-1/2 py-12 px-24 bg-neutral-100 rounded-xl'>
+        <div className='lg:w-1/2 py-12 px-24 bg-neutral-100 rounded-xl'>
             <video className='rounded-[36px]' ref={el => videoRefs.current[1] = el} muted autoplay loop>
                 <source type='video/mp4' src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FSelecting-Rewards-cut.mp4?alt=media&token=ca90bad7-dbdc-4898-8861-acfe850f8bf5'></source>
             </video>
@@ -141,7 +141,7 @@ function MemberRewards() {
       {/* Potential Scenarios */}
 
       <b className='mb-4 block'>Potential Scenarios</b>
-      <p className='mb-8 w-3/5 fade-in delay-2'>
+      <p className='mb-8 lg:w-3/5 fade-in delay-2'>
         Collaborating closely with dev and product partners, I identified some of the edge cases that needed to be addressed in the design, such as considerations on what happens if the customer tries to override a promo code or if their Rewards reduce the order total below zero.
       </p>
 
@@ -161,13 +161,13 @@ function MemberRewards() {
       {/* Project Takeaways */}
 
       <b className='mb-4 block'>Project Takeaways</b>
-      <p className='mb-8 w-3/5 fade-in delay-2'>
+      <p className='mb-8 lg:w-3/5 fade-in delay-2'>
         This project was a valuable demonstration of the advantages of involving cross-functional teams strategically early in the process.
       </p>
-      <p className='mb-8 w-3/5 fade-in delay-2'>
+      <p className='mb-8 lg:w-3/5 fade-in delay-2'>
         Dialogue with the program team allowed us to fill the gaps in the program requirements identified through design exploration. Collaboration with the development team helped us find a common ground to translate the tech constraints to create a user-friendly experience.
       </p>
-      <p className='mb-8 w-3/5 fade-in delay-2'>
+      <p className='mb-8 lg:w-3/5 fade-in delay-2'>
         While keeping the technical limitations top of mind presented a challenge in simplifying all the complexity, the additional effort invested to outline all the requirements was worthwhile, saving us a lot of time before committing to design.
       </p>
 
