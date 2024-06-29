@@ -11,6 +11,14 @@
   font-display: swap; /* Ensures text is displayed while the font loads */
 }
 
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Interr.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Ensures text is displayed while the font loads */
+}
+
 :root.dark {
   --background-primary: #111110;
   --background-secondary: #121314;
