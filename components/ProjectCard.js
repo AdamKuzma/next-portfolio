@@ -4,7 +4,7 @@ import Link from 'next/link';
 function ProjectCard({ title, description, mediaType, mediaSrc, linkUrl, className }) {
   return (
 
-    <div className='mt-14 lg:mt-32'>
+    <div className='mt-14 lg:mt-24'>
       <Link href={linkUrl}>
         <div className={`card-container ${className}`}>
           {mediaType === 'image' ? (
@@ -17,7 +17,7 @@ function ProjectCard({ title, description, mediaType, mediaSrc, linkUrl, classNa
           )}
         </div>
       </Link>
-      <Link href={linkUrl}><p className='mt-4 lg:mt-6 link inline-block'>{title}</p></Link>
+      <Link href={linkUrl}><p className='mt-4 lg:mt-4 link inline-block'>{title}</p></Link>
       <p className='text-neutral-400'>{description}</p>
     </div>
 

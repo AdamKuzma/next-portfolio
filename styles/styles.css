@@ -5,7 +5,7 @@
 
 .navigationWrapper {
     position: fixed;
-    bottom: 42px;
+    bottom: 38px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -16,7 +16,7 @@
     border: solid 1px var(--stroke);
     border-radius: 40px;
     text-align: center;
-    padding: 5px 6px;
+    padding: 3px 6px;
     box-shadow: 0 10px 10px -5px rgba(0, 0, 0, .05);
     display: flex;
     justify-content: center;
@@ -24,6 +24,8 @@
     flex-flow: row;
     white-space: nowrap;
     height: auto; /* Ensure height adjusts to content */
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
   }
 
   .navigation ul {
@@ -59,7 +61,7 @@
   }
 
   .themeToggle button {
-    padding: 6px 14px;
+    padding: 3px 14px;
   }
 
   .iconContainer {
@@ -135,3 +137,27 @@
     background-color: var(--text-secondary); /* Match the text color */
     z-index: -1;
   }
+
+/********* Typing Effect ********/
+
+#typing-container {
+  white-space: pre; /* Preserves spaces and line breaks */
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: var(--stroke); } /* Only the cursor blinks */
+}
+
+.typing-cursor {
+  animation: blink 0.95s ease-in-out infinite alternate;
+  border-right: 3.5px solid transparent;
+}
+
+#line1, #line2 {
+  display: inline-block;
+}
+
+.line-wrapper {
+  display: block; /* Ensure lines are block elements to break lines */
+}

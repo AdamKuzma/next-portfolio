@@ -26,8 +26,8 @@ function Footer() {
 
     return (
         <footer className="hidden md:flex justify-between pb-8 px-8 text-[var(--text-secondary)] text-sm">
-            <p>New York City</p>
             {time && <p>{time}</p>}
+            <p>Adam Kuzma <span className="text-xs"> • </span> 2024</p>
         </footer>
     );
 }

@@ -14,11 +14,11 @@ function Projects() {
         />
 
         <ProjectCard
-            className='py-8 px-8 lg:py-20 lg:px-40 bg-neutral-100 rounded-xl'
+            className='pt-14 px-10 pb-4 lg:pt-36 lg:pb-16 lg:px-40 bg-[#F2F2F4] rounded-xl'
             title="Digital Store System"
             description="2024 · Design System"
-            mediaType="video"
-            mediaSrc="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FDigital-Store-System1.mp4?alt=media&token=0266baa1-a943-42d2-afda-55b0f4e80b1b"
+            mediaType="image"
+            mediaSrc="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FDS%20Featured.png?alt=media&token=6ea61ec4-58bb-4ebd-a602-c01b449d8c6a"
             linkUrl="/projects/digital-store-system"
         />
 
