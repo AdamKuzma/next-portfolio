@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'PP Mondwest';
+  src: url('/fonts/PPMondwest-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Ensures text is displayed while the font loads */
+}
+
 :root.dark {
   --background-primary: #111110;
   --background-secondary: #121314;
@@ -45,12 +53,12 @@
 }
 
 h1 {
-  font-family: 'PP Mondwest', sans-serif;
+  font-family: 'PP Mondwest', Inter, sans-serif;
   font-size: 96px;
 }
 
 h2 {
-  font-family: 'PP Mondwest', sans-serif;
+  font-family: 'PP Mondwest', Inter, sans-serif;
 }
 
 body {
