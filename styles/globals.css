@@ -2,7 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+:root.dark {
+  --background-primary: #111110;
+  --background-secondary: #121314;
+  --text-primary: #EEEEEC;
+  --text-body: #EEEEEC;
+  --text-secondary: #B5B3AD;
+  --text-tertiary: #B5B3AD;
+  --stroke: #282828;
+  --gray: #282828;
+  --menu-bg: rgba(25, 25, 25, 0.98);
+  transition: all 0.2s ease-in-out;
+}
+
+:root.light {
   --background-primary: #FFF;
   --background-secondary: #F4F4F5;
   --text-primary: #000;
@@ -13,6 +26,22 @@
   --stroke: #E5E5E5;;
   --menu-bg: rgba(255, 255, 255, 0.98);
   transition: all 0.2s ease-in-out;
+}
+
+:root.dark #icon-sun {
+  display: none;
+}
+
+:root.light #icon-moon {
+  display: none;
+}
+
+:root.dark .dark-invert {
+  filter: invert();
+}
+
+:root.light .light-invert {
+  filter: invert();
 }
 
 h1 {
@@ -35,6 +64,14 @@ body {
 
 b {
   font-weight: 600;
+}
+
+ul {
+  padding-left: 1.3rem;
+}
+
+ul li::marker {
+  color: var(--stroke);
 }
 
 
@@ -95,4 +132,77 @@ b {
 
 .delay-6 {
   animation-delay: 0.3s;
+}
+
+
+/* Global styles */
+
+.container {
+  width: 920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+}
+
+
+.intro-header {
+  font-family: 'PP Mondwest', sans-serif;
+  font-size: 3rem;
+  line-height: 110%;
+  color: var(--text-primary);
+}
+
+.intro-description {
+  color: var(--text-primary);
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    max-width: 920px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 100%;
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 25px;
+  }
+
+  .intro-header {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .intro-description {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 25px;
+  }
+
+  .intro-header {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .intro-description {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
 }

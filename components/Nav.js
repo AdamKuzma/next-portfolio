@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import ThemeSwitch from './ThemeSwitch';
 
 const Nav = () => {
   return (
@@ -30,6 +31,7 @@ const SlideTabs = () => {
       <Tab setPosition={setPosition}><Link href="/">Work</Link></Tab>
       <Tab setPosition={setPosition}><Link href="/about">About</Link></Tab>
       <Tab setPosition={setPosition}><Link href="/contact">Contact</Link></Tab>
+      <Tab setPosition={setPosition} isThemeSwitch><ThemeSwitch/></Tab>
       <Cursor position={position} />
     </ul>
   );

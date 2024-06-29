@@ -1,22 +1,5 @@
 /* Home */
 
-.intro-header {
-    font-family: 'PP Mondwest', sans-serif;
-    font-size: 56px;
-    line-height: 110%;
-    color: var(--text-primary);
-  }
-
-  .intro-description {
-    color: var(--text-primary);
-    font-size: 18px;
-    line-height: 150%;
-  }
-
-  .thi {
-    display: subgrid;
-  }
-
 
 /* Navigation */
 
@@ -83,4 +66,72 @@
     width: 24px;
     height: 24px;
     display: block;
+  }
+
+
+/* Project */
+
+.project-tags {
+  gap: 10px;
+}
+
+.project-tags div {
+  border: 1px var(--text-primary) solid;
+  border-radius: 20px;
+  padding: 2px 12px;
+  font-size: 15px;
+}
+
+.annotation {
+  color: var(--text-secondary);
+}
+
+/* Contact */
+
+.contacts b {
+    margin-bottom: 30px;
+    display: inline-flexbox;
+  }
+
+  .contacts p {
+    margin-bottom: 15px;
+    text-decoration: underline;
+    text-decoration-color: var(--gray);
+    text-decoration-thickness: 2px;
+    display: inline-block;
+    width: max-content;
+  }
+
+  .contacts p:hover {
+    margin-bottom: 15px;
+    text-decoration: underline;
+    text-decoration-color: var(--text-secondary);
+    text-decoration-thickness: 2px;
+    cursor: pointer;
+  }
+
+  .link {
+    position: relative;
+  }
+
+  .link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 2px; /* Adjust as necessary */
+    width: 100%;
+    height: 2px; /* Adjust thickness */
+    background-color: var(--gray); /* Match the text color */
+    z-index: -1;
+  }
+
+  .link:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 2px; /* Adjust as necessary */
+    width: 100%;
+    height: 2px; /* Adjust thickness */
+    background-color: var(--text-secondary); /* Match the text color */
+    z-index: -1;
   }
