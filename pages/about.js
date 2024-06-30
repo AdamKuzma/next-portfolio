@@ -1,5 +1,6 @@
 import React from 'react';
 import SayHi from '../components/SayHi';
+import Footer from '../components/Footer';
 
 const About = () => (
   <>
