@@ -22,7 +22,7 @@ const About = () => (
             </div>
         </div>
         <div className='lg:w-1/2 mt-16 lg:mt-0fade-in delay-1'>
-            <img className='rounded-xl' src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/Me.jpg?alt=media&token=e9b9b91d-ab42-40b0-ae12-1d0a5698d53d'/>
+            <img className='rounded-lg' src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/Me.jpg?alt=media&token=e9b9b91d-ab42-40b0-ae12-1d0a5698d53d'/>
         </div>
       </div>
       <SayHi></SayHi>
