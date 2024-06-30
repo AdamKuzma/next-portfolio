@@ -2,6 +2,7 @@ import React from 'react';
 import SayHi from '../components/SayHi';
 
 const About = () => (
+  <>
   <div className='container'>
       <div className='lg:flex mt-32 gap-20'>
         <div className='lg:w-1/2'>
@@ -27,6 +28,8 @@ const About = () => (
       </div>
       <SayHi></SayHi>
     </div>
+    <Footer/>
+    </>
 );
 
 export default About;
