@@ -5,7 +5,7 @@ function Projects() {
   return (
     <div className='mb-12 fade-in delay-2'>
         <ProjectCard
-            className='rounded-xl bg-[#F4F4F5] py-8 px-12 lg:py-16 lg:px-48'
+            className='py-8 px-12 lg:py-16 lg:px-48 bg-[#F4F4F5] rounded-lg '
             title="Clienteling Filters"
             description="2024 · Product Design"
             mediaType="image"
@@ -14,7 +14,7 @@ function Projects() {
         />
 
         <ProjectCard
-            className='py-8 px-10 lg:py-16 lg:px-48 mt-14 lg:mt-24 bg-[#F4F4F5] rounded-xl'
+            className='py-8 px-10 lg:py-16 lg:px-48 mt-14 lg:mt-24 bg-[#F4F4F5] rounded-lg'
             title="Digital Store System"
             description="2024 · Design System"
             mediaType="video"
@@ -23,7 +23,7 @@ function Projects() {
         />
 
         <ProjectCard
-            className='py-4 px-0 lg:py-12 lg:px-8 mt-14 lg:mt-24 bg-neutral-100 rounded-xl'
+            className='py-4 px-0 lg:py-12 lg:px-8 mt-14 lg:mt-24 bg-neutral-100 rounded-lg'
             title="Amor Components"
             description="2022 · Design System"
             mediaType="image"
@@ -32,7 +32,7 @@ function Projects() {
         />
 
         <ProjectCard
-            className='py-8 px-8 lg:py-20 lg:px-40 mt-14 lg:mt-24 bg-neutral-100 rounded-xl'
+            className='py-8 px-8 lg:py-20 lg:px-40 mt-14 lg:mt-24 bg-neutral-100 rounded-lg'
             title="Member Rewards"
             description="2023 · Product Design"
             mediaType="image"
