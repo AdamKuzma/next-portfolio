@@ -114,7 +114,7 @@ function MemberRewards() {
             </p>
         </div>
         <div className='lg:w-1/2 py-12 px-24 bg-neutral-100 rounded-xl'>
-            <video className='rounded-[36px]' ref={el => videoRefs.current[0] = el} muted autoplay loop>
+            <video className='rounded-[36px]' ref={el => videoRefs.current[0] = el} muted autoplay loop playsInline>
                 <source type='video/mp4' src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FApply-Rewards-cut.mp4?alt=media&token=92a8076f-bc61-42bd-b2e7-54539440ef57'></source>
             </video>
         </div>
@@ -131,7 +131,7 @@ function MemberRewards() {
             </p>
         </div>
         <div className='lg:w-1/2 py-12 px-24 bg-neutral-100 rounded-xl'>
-            <video className='rounded-[36px]' ref={el => videoRefs.current[1] = el} muted autoplay loop>
+            <video className='rounded-[36px]' ref={el => videoRefs.current[1] = el} muted autoplay loop playsInline>
                 <source type='video/mp4' src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FSelecting-Rewards-cut.mp4?alt=media&token=ca90bad7-dbdc-4898-8861-acfe850f8bf5'></source>
             </video>
         </div>

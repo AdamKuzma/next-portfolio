@@ -28,7 +28,7 @@ function DigitalStoreSystem() {
       {/* Project Intro */}
 
       <div className='mb-12 py-3 px-3 lg:py-0 lg:px-28 bg-[#F4F4F5] fade-in delay-2 rounded-lg'>
-            <video className='' ref={el => videoRefs.current[0] = el} muted autoplay loop>
+            <video className='' ref={el => videoRefs.current[0] = el} muted autoplay loop playsInline>
                 <source type='video/mp4' src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20-%20Featured%201.mp4?alt=media&token=23bf42c3-4a5a-4674-992e-f8c07a59d22c'></source>
             </video>
       </div>

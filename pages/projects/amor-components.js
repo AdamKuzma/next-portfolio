@@ -40,7 +40,7 @@ function AmorComponents() {
         </p>
 
         <div className='flex mb-24 mt-24 rounded-xl'>
-            <video className='rounded-xl' ref={el => videoRefs.current[0] = el} muted autoplay loop>
+            <video className='rounded-xl' ref={el => videoRefs.current[0] = el} muted autoplay loop playsInline>
                 <source type='video/mp4' src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FAmor-Vid.mp4?alt=media&token=36b16b98-208c-4c60-baba-b29152c3b6c6'></source>
             </video>
         </div>
@@ -78,7 +78,7 @@ function AmorComponents() {
         </div>
 
         <div className='flex mb-24 mt-12 rounded-xl'>
-            <video className='rounded-xl' ref={el => videoRefs.current[1] = el} muted autoplay loop>
+            <video className='rounded-xl' ref={el => videoRefs.current[1] = el} muted autoplay loop playsInline>
                 <source type='video/mp4' src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FBanner-Variations.mp4?alt=media&token=0f8950c9-019f-471e-a845-0760b5eb2592'></source>
             </video>
         </div>
@@ -92,7 +92,7 @@ function AmorComponents() {
         </p>
 
         <div className='flex mb-24 mt-12 rounded-xl'>
-            <video className='rounded-xl' ref={el => videoRefs.current[2] = el} muted autoplay loop>
+            <video className='rounded-xl' ref={el => videoRefs.current[2] = el} muted autoplay loop playsInline>
                 <source type='video/mp4' src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FResponsive-Amor-2.mp4?alt=media&token=143ebad0-425c-4592-ae14-efcff99bd381'></source>
             </video>
         </div>
@@ -106,7 +106,7 @@ function AmorComponents() {
         </p>
 
         <div className='flex mb-24 mt-12 rounded-xl'>
-            <video className='rounded-xl' ref={el => videoRefs.current[3] = el} muted autoplay loop>
+            <video className='rounded-xl' ref={el => videoRefs.current[3] = el} muted autoplay loop playsInline>
                 <source type='video/mp4' src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FAmor-Properties.mp4?alt=media&token=75887917-2cc2-40f8-9c83-c4300b63f49b'></source>
             </video>
         </div>
