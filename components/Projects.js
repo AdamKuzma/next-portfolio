@@ -5,20 +5,20 @@ function Projects() {
   return (
     <div className='mb-12 fade-in delay-2'>
         <ProjectCard
-            className='rounded-xl bg-[#F2F2F4] py-8 px-12 lg:py-16 lg:px-48'
+            className='rounded-xl bg-[#F4F4F5] py-8 px-12 lg:py-16 lg:px-48'
             title="Clienteling Filters"
             description="2024 · Product Design"
             mediaType="image"
-            mediaSrc="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20Featured.png?alt=media&token=1d900e60-2d6e-40d3-aaf9-df149b6da697"
+            mediaSrc="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/featured%2FCL%20-%20Clienteling%20Filters.png?alt=media&token=b384fcfc-79d5-48ab-9a42-7eb6a0d38577"
             linkUrl="/projects/clienteling-filters"
         />
 
         <ProjectCard
-            className='py-8 px-10 lg:py-16 lg:px-40 mt-14 lg:mt-24 bg-[#F2F2F4] rounded-xl'
+            className='py-8 px-10 lg:py-16 lg:px-48 mt-14 lg:mt-24 bg-[#F4F4F5] rounded-xl'
             title="Digital Store System"
             description="2024 · Design System"
             mediaType="video"
-            mediaSrc="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FDigital-Store-System1.mp4?alt=media&token=0266baa1-a943-42d2-afda-55b0f4e80b1b"
+            mediaSrc="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/featured%2FDS%20-%20Featured2.mp4?alt=media&token=9f28cda3-3866-48f6-85f0-4c2bcf262d0b"
             linkUrl="/projects/digital-store-system"
         />
 

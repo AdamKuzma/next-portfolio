@@ -10,7 +10,7 @@ function ProjectCard({ title, description, mediaType, mediaSrc, linkUrl, classNa
           {mediaType === 'image' ? (
               <img className='' src={mediaSrc} alt={title} />
             ) : (
-              <video className='' muted autoPlay loop>
+              <video className='' muted autoPlay loop playsInline>
                 <source src={mediaSrc} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
