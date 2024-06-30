@@ -13,13 +13,19 @@ const TypingAnimation = () => {
 
     const typeLine1 = () => {
       if (index1.current < text1.length) {
-        line1Ref.current.textContent += text1.charAt(index1.current);
+        if (line1Ref.current) {
+          line1Ref.current.textContent += text1.charAt(index1.current);
+        }
         index1.current++;
         setTimeout(typeLine1, typingSpeed);
       } else {
-        line1Ref.current.classList.remove('typing-cursor'); // Remove cursor after typing
+        if (line1Ref.current) {
+          line1Ref.current.classList.remove('typing-cursor'); // Remove cursor after typing
+        }
         setTimeout(() => {
-          line2Ref.current.classList.add('typing-cursor'); // Add cursor to next line
+          if (line2Ref.current) {
+            line2Ref.current.classList.add('typing-cursor'); // Add cursor to next line
+          }
           typeLine2();
         }, 400); // Wait before starting next line
       }
@@ -27,16 +33,18 @@ const TypingAnimation = () => {
 
     const typeLine2 = () => {
       if (index2.current < text2.length) {
-        line2Ref.current.textContent += text2.charAt(index2.current);
+        if (line2Ref.current) {
+          line2Ref.current.textContent += text2.charAt(index2.current);
+        }
         index2.current++;
         setTimeout(typeLine2, typingSpeed);
-      } else {
-
       }
     };
 
     const startTyping = setTimeout(() => {
-      line1Ref.current.classList.add('typing-cursor'); // Add cursor to first line
+      if (line1Ref.current) {
+        line1Ref.current.classList.add('typing-cursor'); // Add cursor to first line
+      }
       typeLine1();
     }, 1000); // Adjust delay before typing starts (1000ms = 1s)
 

@@ -1,32 +1,39 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 function ThemeSwitch() {
+  const [theme, setTheme] = useState('light');
 
-    const [theme, setTheme] = useState('light');
+  useEffect(() => {
+    // Load saved theme from localStorage, or default to 'light'
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
 
-    /*useEffect(() => {
-      if(window.matchMedia('(prefers-color-scheme: dark)').matches){
-        setTheme('dark');
-      }
-      else {
-        setTheme('light');
-      }
-    }, []);*/
+    const root = document.documentElement;
+    if (savedTheme === "dark") {
+      root.classList.add("dark");
+      root.classList.remove("light");
+    } else {
+      root.classList.add("light");
+      root.classList.remove("dark");
+    }
+  }, []);
 
-    useEffect(() => {
-        const root = document.documentElement;
-        if (theme === "dark") {
-          root.classList.add("dark");
-          root.classList.remove("light");
-        } else {
-          root.classList.add("light");
-          root.classList.remove("dark");
-        }
-    }, [theme]);
+  useEffect(() => {
+    const root = document.documentElement;
+    if (theme === "dark") {
+      root.classList.add("dark");
+      root.classList.remove("light");
+    } else {
+      root.classList.add("light");
+      root.classList.remove("dark");
+    }
+    // Save the current theme to localStorage
+    localStorage.setItem('theme', theme);
+  }, [theme]);
 
-    const handleThemeSwitch = () => {
-      setTheme(theme === "dark" ? "light" : "dark");
-    };
+  const handleThemeSwitch = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
 
     return (
         <button onClick={handleThemeSwitch}>
