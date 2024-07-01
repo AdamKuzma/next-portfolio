@@ -120,11 +120,11 @@ function AmorComponents() {
             Specifications on usage and examples helped designers and the marketing team understand how to start using components. Amor Content Components are a part of our Figma library, and anyone can access their documentation in ZeroHeight.
         </p>
 
-        <div className='mb-14 py-8 px-4 lg:py-12 lg:px-12 bg-neutral-900 rounded-lg'>
+        <div className='mb-12 py-8 px-4 lg:py-12 lg:px-12 bg-neutral-900 rounded-lg'>
             <img className='' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FType-Specs.png?alt=media&token=19561d95-fe34-4697-98f8-4b8fdfcded0f" alt="Amor Components" />
         </div>
 
-        <div className='mb-14 py-8 px-4 lg:py-12 lg:px-12 bg-neutral-900 rounded-lg'>
+        <div className='mb-12 py-8 px-4 lg:py-12 lg:px-12 bg-neutral-900 rounded-lg'>
             <img className='' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FSpacing-Specs.png?alt=media&token=c752c4c3-423d-44c1-84f9-ba2fb3d99d95" alt="Amor Components" />
         </div>
 
