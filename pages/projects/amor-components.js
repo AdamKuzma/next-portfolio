@@ -36,7 +36,7 @@ function AmorComponents() {
         </p>
 
         <p className='mb-12 lg:w-3/5 fade-in delay-4'>
-            The redesigned CMS tool, improved the efficiency of our marketing team’s content management processes, currently with over 1,000 components in use across our websites.
+            The redesigned CMS tool, improved the efficiency of our marketing team&apos;s content management processes, currently with over 1,000 components in use across our websites.
         </p>
 
         <div className='flex mb-3 py-8 px-8 lg:py-12 lg:px-12 bg-neutral-100 fade-in delay-5 rounded-lg'>
@@ -51,7 +51,7 @@ function AmorComponents() {
 
         <b className='mb-4 block'>Leveraging Design System</b>
         <p className='mb-4 lg:w-3/5'>
-            An audit of Signet’s content pages was necessary from both design and engineering perspective. We used 68 different fonts and 41 colors across five websites at the time, which was a severe performance concern.
+            An audit of Signet&apos;s content pages was necessary from both design and engineering perspective. We used 68 different fonts and 41 colors across five websites at the time, which was a severe performance concern.
         </p>
 
         <p className='mb-12 lg:w-3/5'>
