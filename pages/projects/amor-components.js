@@ -28,7 +28,7 @@ function AmorComponents() {
         {/* Project Intro */}
 
         <p className='mb-8 lg:w-3/5 fade-in delay-2'>
-            Amor is a design system built to ensure uniform and accessible e-commerce experiences on a large scale across multiple Signet brands. While it worked well for our shop and checkout experiences, its implementation wasn’t as successful for the content pages managed by our marketing teams.
+            Amor is a design system built to ensure uniform and accessible e-commerce experiences on a large scale across multiple Signet brands. While it worked well for our shop and checkout experiences, its implementation wasn&apos;t as successful for the content pages managed by our marketing teams.
         </p>
 
         <p className='mb-8 lg:w-3/5 fade-in delay-3'>
@@ -141,7 +141,7 @@ function AmorComponents() {
 
         <b className='mb-4 block'>Impact</b>
         <p className='mb-8 lg:w-3/5'>
-            Amor Content Components have empowered everyone in the organization to launch new marketing pages rapidly and consistently, improving our website&apos;s interface with confidence. Two years after their release, we've have recorded over 3000 component instances used across our websites.
+            Amor Content Components have empowered everyone in the organization to launch new marketing pages rapidly and consistently, improving our website&apos;s interface with confidence. Two years after their release, we&apos;ve have recorded over 3000 component instances used across our websites.
         </p>
 
       <SayHi></SayHi>
