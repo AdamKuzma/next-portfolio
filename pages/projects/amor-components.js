@@ -141,7 +141,7 @@ function AmorComponents() {
 
         <b className='mb-4 block'>Impact</b>
         <p className='mb-8 lg:w-3/5'>
-            Amor Content Components have empowered everyone in the organization to launch new marketing pages rapidly and consistently, improving our website’s interface with confidence. Two years after their release, we've have recorded over 3000 component instances used across our websites.
+            Amor Content Components have empowered everyone in the organization to launch new marketing pages rapidly and consistently, improving our website&apos;s interface with confidence. Two years after their release, we've have recorded over 3000 component instances used across our websites.
         </p>
 
       <SayHi></SayHi>
