@@ -28,33 +28,39 @@ function DigitalStoreSystem() {
       {/* Project Intro */}
 
       <div className='mb-12 py-3 px-3 lg:py-0 lg:px-28 bg-[#F4F4F5] fade-in delay-2 rounded-lg'>
-            <video className='' ref={el => videoRefs.current[0] = el} muted autoplay loop playsInline>
-                <source type='video/mp4' src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20-%20Featured%201.mp4?alt=media&token=23bf42c3-4a5a-4674-992e-f8c07a59d22c'></source>
+            <video className='lazyload' ref={el => videoRefs.current[0] = el} muted autoplay loop playsInline poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20-%20VideoComp.png?alt=media&token=7bb8edb8-1aeb-4be9-804a-98a327949182'>
+                <source
+                  type='video/mp4'
+                  src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20-%20Featured%201.mp4?alt=media&token=23bf42c3-4a5a-4674-992e-f8c07a59d22c'></source>
             </video>
       </div>
 
       <b className='mb-4 block fade-in delay-3'>Context</b>
       <p className='mb-6 lg:w-3/5 fade-in delay-3'>
-        Jewelry experts at Signet’s stores use the Clienteling iPad app to build stronger relationships with customers. Customer outreach is one of the most frequently performed tasks in-store. 
+        Jewelry experts at Signet&apos;s stores use the Clienteling iPad app to build stronger relationships with customers. Customer outreach is one of the most frequently performed tasks in-store. 
       </p>
 
       <p className='mb-12 lg:w-3/5 fade-in delay-4'>
-        Jewelry experts would typically use Clienteling’s customer search filters to find specific customers or customer segments for targeted communication and reach out to them via email or schedule a reminder to contact them at a later time - for example to promote a new line of engagement rings to customers who would potentially be interested.
+        Jewelry experts would typically use Clienteling&apos;s customer search filters to find specific customers or customer segments for targeted communication and reach out to them via email or schedule a reminder to contact them at a later time - for example to promote a new line of engagement rings to customers who would potentially be interested.
       </p>
 
       <div className='mb-12 px-12 py-6 lg:px-56 lg:py-16 bg-[#F2F2F4] rounded-lg'>
-        <img className='w-full h-auto object-contain rounded-lg' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FClienteling%20Context.png?alt=media&token=d77d10bb-5364-44c3-af58-43676044aa6a" alt="Digital Store System" />
+        <img
+          className='w-full h-auto object-contain rounded-lg'
+          src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FClienteling%20Context.png?alt=media&token=d77d10bb-5364-44c3-af58-43676044aa6a" 
+          alt="Digital Store System"
+        />
       </div>
 
       {/* Problem */}
 
       <b className='mb-4 block'>Problem</b>
       <p className='mb-6 lg:w-3/5'>
-        As the search capabilities kept evolving and new filters kept getting added, their organization started to become unintuitive. New Jewelry Experts faced a steep learning curve, while experienced JEs asked for more filtering options. Many of the frequently used filters were hidden under the second navigation level, which led to poor discoverability.
+        As the search capabilities kept evolving and new filters were added, their organization started to become unintuitive. New Jewelry Experts faced a steep learning curve, while experienced JEs asked for more filtering options. Many of the frequently used filters were hidden under the second navigation level, which led to poor discoverability.
       </p>
 
       <p className='mb-12 lg:w-3/5'>
-        Once the filters for a specific customer segment were applied, there was no visibility to the contact method each customer was opted into, meaning the JEs would often find out that some of the selected customers don’t have an email address in their records.
+        Once the filters for a specific customer segment were applied, there was no visibility to the contact method each customer was opted into, meaning the JEs would often find out that some of the selected customers don&apos;t have an email address in their records.
       </p>
 
       <div className='mb-12 px-6 py-6 lg:px-44 lg:py-16 bg-[#F2F2F4] rounded-lg'>
@@ -65,7 +71,7 @@ function DigitalStoreSystem() {
 
       <b className='mb-4 block'>Solution</b>
       <p className='mb-6 lg:w-3/5'>
-        In collaboration with product managers, researchers, and engineers, I led the design for the new customer filters for Jewelry Experts.
+        In collaboration with product managers, researchers, and engineers, I led the design for the new customer filters for Jewelry Experts from discovery to implementation.
       </p>
 
       <p className='mb-6 lg:w-3/5'>
@@ -73,11 +79,11 @@ function DigitalStoreSystem() {
       </p>
 
       <p className='mb-6 lg:w-3/5'>
-        Thinking in the larger context, I also streamlined outreach and creating outreach reminders by brining visibility to available contact methods to inform decision-making and remove unnecessary steps.
+        I also streamlined outreach and creating outreach reminders by bringing visibility to available contact methods to inform decision-making and remove unnecessary steps.
       </p>
 
       <p className='mb-12 lg:w-3/5'>
-        After testing two design variants with Jewelry Experts in-store, we’ve taken the features that tested positively to inform the final designs below.
+        After testing two design variants with Jewelry Experts in-store, we&apos;ve taken the features that tested positively to inform the final designs below.
       </p>
 
       <div className='mb-12 py-4 px-6 lg:px-44 lg:py-16 bg-[#F2F2F4] rounded-lg'>
@@ -128,11 +134,11 @@ function DigitalStoreSystem() {
       <p className='mb-8 annotation text-sm'>Contact methods</p>
 
       <p className='mb-4 lg:w-3/5'>
-        Jewelry experts can now see the contact methods customers are opted-into and filter for specific methods to schedule a method-specific task.
+        JEs can now see the contact methods customers are opted-into and filter for specific methods to schedule a method-specific task.
       </p>
 
       <p className='mb-12 lg:w-3/5'>
-        Previously, scheduled tasks had a ‘generic outreach’ type which required the JE to spend additional time to view the customer profile in search of available contact information.
+        Previously, scheduled tasks had a &apos;generic outreach&apos; type which required the JE to spend additional time to view the customer profile in search of available contact information.
       </p>
 
 
@@ -162,7 +168,7 @@ function DigitalStoreSystem() {
       </p>
 
       <p className='mb-16 lg:w-3/5'>
-        I added a new Last Outreach filter which allows to filter customers who haven’t been contacted in a while and also exclude customers who already have a scheduled outreach task.
+        I added a new Last Outreach filter which allows to filter customers who haven&apos;t been contacted in a while and also exclude customers who already have a scheduled outreach task.
       </p>
 
 

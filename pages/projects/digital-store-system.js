@@ -15,7 +15,12 @@ function DigitalStoreSystem() {
       {/* Project Intro */}
 
         <div className='mb-12 bg-[#F2F2F4] pt-8 px-10 lg:pt-16 lg:px-36 fade-in delay-2 rounded-lg'>
-          <img className='w-full h-auto object-contain' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FDS%20-%20First.png?alt=media&token=4a27e232-3320-4121-8972-14872cf7797a" alt="Digital Store System" />
+          <img
+            className='w-full h-auto object-contain lazyload'
+            src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FDS%20-%20First.jpg?alt=media&token=bb9f7d6e-1823-43ce-adf7-7fb334219188"
+            data-src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FDS%20-%20First.png?alt=media&token=4a27e232-3320-4121-8972-14872cf7797a" 
+            alt="Digital Store System"
+          />
         </div>
 
         <p className='mb-8 lg:w-3/5 fade-in delay-3'>

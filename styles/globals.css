@@ -188,6 +188,17 @@ p {
   line-height: 150%;
 }
 
+/* Lazyload Image */
+
+.lazyload,
+.lazyloading {
+  filter: blur(14px);
+}
+
+.lazyloaded {
+  filter: blur(0);
+}
+
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
