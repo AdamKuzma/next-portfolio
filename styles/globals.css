@@ -115,6 +115,10 @@ p {
   color: #fff;
 }
 
+footer p {
+  color: var(--text-secondary);
+}
+
 /* Animation */
 
 @keyframes fadeIn {

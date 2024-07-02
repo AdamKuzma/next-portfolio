@@ -104,8 +104,12 @@ function DigitalStoreSystem() {
 
       {/* Search Bar */}
 
-      <div className='mb-3 pt-6 px-6 lg:px-32 lg:pt-16 bg-[#F2F2F4] rounded-lg'>
-        <img className='w-full h-auto object-contain' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20Search.png?alt=media&token=0fc8d96b-c587-4f8f-9afe-543a14033676" alt="Digital Store System" />
+      <div className='mb-3 pt-8 pb- px-6 lg:pt-16 lg:pb-0 lg:px-32 bg-[#F2F2F4] rounded-lg'>
+            <video className='lazyload' ref={el => videoRefs.current[1] = el} muted autoplay loop playsInline poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20SearchComp.jpg?alt=media&token=5669a678-0026-4683-b39a-88692ea6edaf'>
+                <source
+                  type='video/mp4'
+                  src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20Search.mp4?alt=media&token=63eb4635-8c8f-4797-92af-d1c79f77d578'></source>
+            </video>
       </div>
       <p className='mb-8 annotation text-sm'>Search bar</p>
 
@@ -116,8 +120,12 @@ function DigitalStoreSystem() {
 
       {/* New Filter Drawer */}
 
-      <div className='mt-4 mb-3 pt-6 px-6 lg:px-32 lg:pt-16 bg-[#F2F2F4] rounded-lg'>
-        <img className='w-full h-auto object-contain' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20Select%20Filters.png?alt=media&token=867d57aa-1044-4666-b406-ea84125b5824" alt="Digital Store System" />
+      <div className='mb-3 pt-8 pb- px-6 lg:pt-16 lg:pb-0 lg:px-32 bg-[#F2F2F4] rounded-lg'>
+            <video className='lazyload' ref={el => videoRefs.current[2] = el} muted autoplay loop playsInline poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20Filter.jpg?alt=media&token=5261857a-c22e-484c-a077-1fd95bbcd81f'>
+                <source
+                  type='video/mp4'
+                  src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20Filter.mp4?alt=media&token=86eb82ba-8168-44c4-a933-cf777fba8cdd'></source>
+            </video>
       </div>
       <p className='mb-8 annotation text-sm'>New filter drawer</p>
 
@@ -128,8 +136,12 @@ function DigitalStoreSystem() {
 
       {/* Contact Methods */}
 
-      <div className='mt-4 mb-3 pb-8 px-6 lg:px-32 lg:pb-16 bg-[#F2F2F4] rounded-lg'>
-        <img className='w-full h-auto object-contain' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20Contact%20Methods.png?alt=media&token=133b9095-007b-46b6-af2b-057277fe1392" alt="Digital Store System" />
+      <div className='mb-3 pt-0 pb-8 px-6 lg:pt-0 lg:pb-16 lg:px-32 bg-[#F2F2F4] rounded-lg'>
+            <video className='lazyload' ref={el => videoRefs.current[3] = el} muted autoplay loop playsInline poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20ScheduleTaskComp.jpg?alt=media&token=090c7063-8f0f-4c8c-968d-399901a262e8'>
+                <source
+                  type='video/mp4'
+                  src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20Schedule%20Task.mp4?alt=media&token=d5508d0b-bbf0-4f67-a9cf-f8e9fb9528d4'></source>
+            </video>
       </div>
       <p className='mb-8 annotation text-sm'>Contact methods</p>
 

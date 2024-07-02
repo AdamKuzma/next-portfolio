@@ -9,7 +9,6 @@ function Footer() {
             setTime(DateTime.now().setZone('America/New_York').toLocaleString({
                 hour: 'numeric',
                 minute: 'numeric',
-                second: 'numeric',
                 hour12: true
             }));
         };
@@ -18,7 +17,7 @@ function Footer() {
         updateTime();
 
         // Update time every second
-        const intervalId = setInterval(updateTime, 1000);
+        const intervalId = setInterval(updateTime, 60000);
 
         // Cleanup interval on component unmount
         return () => clearInterval(intervalId);
@@ -26,7 +25,7 @@ function Footer() {
 
     return (
         <footer className="hidden md:flex justify-between pb-8 px-8 text-[var(--text-secondary)] text-sm">
-            {time && <p>{time}</p>}
+            <p className='flex flex-row'>{time && <p> {time} </p>} &nbsp;<span className="text-xs"> • </span>&nbsp;New York</p>
             <p>Adam Kuzma <span className="text-xs"> • </span> 2024</p>
         </footer>
     );
