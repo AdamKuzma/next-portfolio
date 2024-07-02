@@ -149,7 +149,7 @@ function DigitalStoreSystem() {
             <video className='lazyload' ref={el => videoRefs.current[3] = el} muted autoplay loop playsInline preload="auto" poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20Filter.jpg?alt=media&token=5261857a-c22e-484c-a077-1fd95bbcd81f'>
                 <source
                   type='video/mp4'
-                  src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20Schedule%20Task.mp4?alt=media&token=d5508d0b-bbf0-4f67-a9cf-f8e9fb9528d4'></source>
+                  src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20Filter.mp4?alt=media&token=86eb82ba-8168-44c4-a933-cf777fba8cdd'></source>
             </video>
       </div>
       <div className='mb-3 pt-0 pb-8 px-6 lg:pt-0 lg:pb-16 lg:px-32 bg-[#F2F2F4] rounded-lg'>
