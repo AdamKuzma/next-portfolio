@@ -129,7 +129,7 @@ function DigitalStoreSystem() {
 
       {/* New Filter Drawer */}
 
-      <div className='mb-3 pt-8 pb- px-6 lg:pt-16 lg:pb-0 lg:px-32 bg-[#F2F2F4] rounded-lg'>
+      <div className='mb-3 pt-8 pb-0 px-6 lg:pt-16 lg:pb-0 lg:px-32 bg-[#F2F2F4] rounded-lg'>
             <video className='lazyload' ref={el => videoRefs.current[2] = el} muted autoplay loop playsInline preload="auto" poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20Filter.jpg?alt=media&token=5261857a-c22e-484c-a077-1fd95bbcd81f'>
                 <source
                   type='video/mp4'
@@ -145,8 +145,8 @@ function DigitalStoreSystem() {
 
       {/* Contact Methods */}
 
-      <div className='mb-3 pt-8 pb- px-6 lg:pt-16 lg:pb-0 lg:px-32 bg-[#F2F2F4] rounded-lg'>
-            <video className='lazyload' ref={el => videoRefs.current[3] = el} muted autoplay loop playsInline preload="auto" poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20Filter.jpg?alt=media&token=5261857a-c22e-484c-a077-1fd95bbcd81f'>
+      <div className='mb-3 pt-0 pb-8 px-6 lg:pt-0 lg:pb-16 lg:px-32 bg-[#F2F2F4] rounded-lg'>
+            <video className='lazyload' ref={el => videoRefs.current[3] = el} muted autoplay loop playsInline preload="auto" poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20ScheduleTaskComp.jpg?alt=media&token=090c7063-8f0f-4c8c-968d-399901a262e8'>
                 <source
                   type='video/mp4'
                   src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20ScheduleTask.mp4?alt=media&token=d22be85f-4f4a-4bcc-b239-0c6c29ec64bc'></source>
