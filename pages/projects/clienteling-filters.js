@@ -7,11 +7,20 @@ function DigitalStoreSystem() {
   const videoRefs = useRef([]);
 
     useEffect(() => {
+      const playVideo = (video) => {
+        video.play().catch(error => {
+          console.error('Error attempting to play', error);
+        });
+      };
+  
       videoRefs.current.forEach(video => {
         if (video) {
-          video.play().catch(error => {
-            console.error('Error attempting to play', error);
-          });
+          // Try to play the video directly
+          playVideo(video);
+  
+          // Add event listener to try to play the video on user interaction
+          video.addEventListener('click', () => playVideo(video));
+          video.addEventListener('touchstart', () => playVideo(video));
         }
       });
     }, []);
@@ -28,7 +37,7 @@ function DigitalStoreSystem() {
       {/* Project Intro */}
 
       <div className='mb-12 py-3 px-3 lg:py-0 lg:px-28 bg-[#F4F4F5] fade-in delay-2 rounded-lg'>
-            <video className='lazyload' ref={el => videoRefs.current[0] = el} muted autoplay loop playsInline poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20FirstComp.jpg?alt=media&token=39439f65-8cd9-42b4-b023-050f299788d1'>
+            <video className='lazyload' ref={el => videoRefs.current[0] = el} muted autoplay loop playsInline preload="auto" poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20FirstComp.jpg?alt=media&token=39439f65-8cd9-42b4-b023-050f299788d1'>
                 <source
                   type='video/mp4'
                   src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20-%20Featured%201.mp4?alt=media&token=23bf42c3-4a5a-4674-992e-f8c07a59d22c'></source>
@@ -105,7 +114,7 @@ function DigitalStoreSystem() {
       {/* Search Bar */}
 
       <div className='mb-3 pt-8 pb- px-6 lg:pt-16 lg:pb-0 lg:px-32 bg-[#F2F2F4] rounded-lg'>
-            <video className='lazyload' ref={el => videoRefs.current[1] = el} muted autoplay loop playsInline poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20SearchComp.jpg?alt=media&token=5669a678-0026-4683-b39a-88692ea6edaf'>
+            <video className='lazyload' ref={el => videoRefs.current[1] = el} muted autoplay loop playsInline preload="auto" poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20SearchComp.jpg?alt=media&token=5669a678-0026-4683-b39a-88692ea6edaf'>
                 <source
                   type='video/mp4'
                   src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20Search.mp4?alt=media&token=63eb4635-8c8f-4797-92af-d1c79f77d578'></source>
@@ -121,7 +130,7 @@ function DigitalStoreSystem() {
       {/* New Filter Drawer */}
 
       <div className='mb-3 pt-8 pb- px-6 lg:pt-16 lg:pb-0 lg:px-32 bg-[#F2F2F4] rounded-lg'>
-            <video className='lazyload' ref={el => videoRefs.current[2] = el} muted autoplay loop playsInline poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20Filter.jpg?alt=media&token=5261857a-c22e-484c-a077-1fd95bbcd81f'>
+            <video className='lazyload' ref={el => videoRefs.current[2] = el} muted autoplay loop playsInline preload="auto" poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20Filter.jpg?alt=media&token=5261857a-c22e-484c-a077-1fd95bbcd81f'>
                 <source
                   type='video/mp4'
                   src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20Filter.mp4?alt=media&token=86eb82ba-8168-44c4-a933-cf777fba8cdd'></source>
@@ -137,7 +146,7 @@ function DigitalStoreSystem() {
       {/* Contact Methods */}
 
       <div className='mb-3 pt-0 pb-8 px-6 lg:pt-0 lg:pb-16 lg:px-32 bg-[#F2F2F4] rounded-lg'>
-            <video className='lazyload' ref={el => videoRefs.current[3] = el} muted autoplay loop playsInline poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20ScheduleTaskComp.jpg?alt=media&token=090c7063-8f0f-4c8c-968d-399901a262e8'>
+            <video className='lazyload' ref={el => videoRefs.current[3] = el} muted autoplay loop playsInline preload="auto" poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20ScheduleTaskComp.jpg?alt=media&token=090c7063-8f0f-4c8c-968d-399901a262e8'>
                 <source
                   type='video/mp4'
                   src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20Schedule%20Task.mp4?alt=media&token=d5508d0b-bbf0-4f67-a9cf-f8e9fb9528d4'></source>
