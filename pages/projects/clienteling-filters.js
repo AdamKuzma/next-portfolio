@@ -146,11 +146,7 @@ function DigitalStoreSystem() {
       {/* Contact Methods */}
 
       <div className='mb-3 pt-0 pb-8 px-6 lg:pt-0 lg:pb-16 lg:px-32 bg-[#F2F2F4] rounded-lg'>
-            <video className='lazyload' ref={el => videoRefs.current[3] = el} muted autoplay loop playsInline preload="auto" poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20ScheduleTaskComp.jpg?alt=media&token=090c7063-8f0f-4c8c-968d-399901a262e8'>
-                <source
-                  type='video/mp4'
-                  src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20ScheduleTask.mp4?alt=media&token=d22be85f-4f4a-4bcc-b239-0c6c29ec64bc'></source>
-            </video>
+        <img className='w-full h-auto object-contain rounded-lg' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20Contact.png?alt=media&token=499db388-44de-4aa4-b056-db26e203222e" alt="Contact Methods" />
       </div>
 
       <p className='mb-8 annotation text-sm'>Contact methods</p>
