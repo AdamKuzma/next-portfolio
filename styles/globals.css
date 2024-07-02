@@ -110,6 +110,10 @@ p {
   font-family: Inter, sans-serif;
 }
 
+::selection {
+  background: #005AE7;
+  color: #fff;
+}
 
 /* Animation */
 

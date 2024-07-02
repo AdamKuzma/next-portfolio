@@ -28,7 +28,7 @@ function DigitalStoreSystem() {
       {/* Project Intro */}
 
       <div className='mb-12 py-3 px-3 lg:py-0 lg:px-28 bg-[#F4F4F5] fade-in delay-2 rounded-lg'>
-            <video className='lazyload' ref={el => videoRefs.current[0] = el} muted autoplay loop playsInline poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20-%20VideoComp.png?alt=media&token=7bb8edb8-1aeb-4be9-804a-98a327949182'>
+            <video className='lazyload' ref={el => videoRefs.current[0] = el} muted autoplay loop playsInline poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20FirstComp.jpg?alt=media&token=39439f65-8cd9-42b4-b023-050f299788d1'>
                 <source
                   type='video/mp4'
                   src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20-%20Featured%201.mp4?alt=media&token=23bf42c3-4a5a-4674-992e-f8c07a59d22c'></source>
