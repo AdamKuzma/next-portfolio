@@ -127,7 +127,7 @@ function DigitalStoreSystem() {
       </p>
 
 
-      {/* New Filter Drawer */}
+      {/* New Filter Drawers */}
 
       <div className='mb-3 pt-8 pb-0 px-6 lg:pt-16 lg:pb-0 lg:px-32 bg-[#F2F2F4] rounded-lg'>
             <video className='lazyload' ref={el => videoRefs.current[2] = el} muted autoplay loop playsInline preload="auto" poster='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/clienteling-filters%2FCL%20-%20Filter.jpg?alt=media&token=5261857a-c22e-484c-a077-1fd95bbcd81f'>
