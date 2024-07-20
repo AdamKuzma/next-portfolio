@@ -32,6 +32,7 @@
   --gray: #282828;
   --gray1: #393939;
   --menu-bg: rgba(31,31,31,.7);
+  --menu-border: rgba(31,31,31,.85);
 }
 
 :root.light {
@@ -44,6 +45,7 @@
   --gray: #EEEFF2;
   --gray1: #ced0d4;
   --menu-bg: hsla(0, 0%, 99%, 0.65);
+  --menu-border: hsla(0, 0%, 99%, 0.85);
 }
 
 :root.dark #icon-sun {
