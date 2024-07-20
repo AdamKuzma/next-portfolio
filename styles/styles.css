@@ -59,7 +59,7 @@
   }
 
   .navigationHover, .navigation ul li a:hover {
-    background-color: var(--background-secondary);
+    background-color: var(--menu-hover-bg);
   }
 
   .themeToggle {
