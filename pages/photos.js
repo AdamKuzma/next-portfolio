@@ -6,7 +6,6 @@ const Photos = () => {
         { src: '/images/photos/IMG_1618.jpg', alt: 'Queens Bridge', blurDataURL: '/images/photos/IMG_1618.jpg', },
         { src: '/images/photos/IMG_6713.jpg', alt: 'London', blurDataURL: '/images/photos/IMG_6713C.jpg', },
         { src: '/images/photos/IMG_7425.jpg', alt: 'LA', blurDataURL: '/images/photos/IMG_7425C.jpg', },
-        { src: '/images/photos/IMG_8831.jpg', alt: 'Brooklyn Home', blurDataURL: '/images/photos/IMG_8831C.jpg', },
         { src: '/images/photos/IMG_2616.jpg', alt: 'Birds', blurDataURL: '/images/photos/IMG_2616C.jpg', },
         { src: '/images/photos/IMG_7263.jpg', alt: 'Flower', blurDataURL: '/images/photos/IMG_7263C.jpg', },
         { src: '/images/photos/IMG_3576.jpg', alt: 'Tudor Bridge', blurDataURL: '/images/photos/IMG_3576C.jpg', },
