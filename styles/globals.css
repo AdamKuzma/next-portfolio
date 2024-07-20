@@ -32,7 +32,8 @@
   --gray: #282828;
   --gray1: #393939;
   --menu-bg: rgba(31,31,31,.7);
-  --menu-border: rgba(31,31,31,.85);
+  --menu-hover-bg: rgba(27,27,27, 1);
+  --menu-border: rgba(31,31,31,.7);
 }
 
 :root.light {
@@ -44,8 +45,9 @@
   --stroke: #E5E5E5;
   --gray: #EEEFF2;
   --gray1: #ced0d4;
-  --menu-bg: hsla(0, 0%, 99%, 0.65);
-  --menu-border: hsla(0, 0%, 99%, 0.85);
+  --menu-bg: rgba(252, 252, 252, 0.65);
+  --menu-hover-bg: rgba(241, 241, 240, 1);
+  --menu-border: rgba(229, 229, 229, .8);
 }
 
 :root.dark #icon-sun {
