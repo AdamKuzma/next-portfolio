@@ -19,7 +19,7 @@ function Projects2({ scrolled }) {
       <div className={`flex-1 ${scrolled ? '' : 'pointer-events-none'}`}>
         <div className='flex flex-col items-start'>
           {projects.map((project, index) => (
-            <Link href={project.linkUrl}>
+            <Link href={project.linkUrl} key={index}>
                 <div
                 key={index}
                 className={`mb-2 project cursor-pointer fade-in delay-${index + 3}h inline-block`}
