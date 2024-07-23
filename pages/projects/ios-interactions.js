@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import ProjectHeader from '../../components/ProjectHeader';
 import SayHi from '../../components/SayHi';
 
-function iOSInteractions() {
+function IOSInteractions() {
 
   const videoRefs = useRef([]);
 
@@ -68,4 +68,4 @@ function iOSInteractions() {
   );
 }
 
-export default iOSInteractions;
+export default IOSInteractions;
