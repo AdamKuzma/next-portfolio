@@ -15,7 +15,7 @@ function DigitalStoreSystem() {
 
       videoRefs.current.forEach(video => {
         if (video) {
-          // Try to play the video directly
+          // Try to play the video direct
           playVideo(video);
 
           // Add event listener to try to play the video on user interaction
