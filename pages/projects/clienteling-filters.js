@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import ProjectHeader from '../../components/ProjectHeader';
 import SayHi from '../../components/SayHi';
 
-function DigitalStoreSystem() {
+function ClientelingFilters() {
 
   const videoRefs = useRef([]);
 
@@ -221,4 +221,4 @@ function DigitalStoreSystem() {
   );
 }
 
-export default DigitalStoreSystem;
+export default ClientelingFilters;
