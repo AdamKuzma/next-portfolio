@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const TypingAnimation = () => {
+const TypingAnimation = ({ onComplete }) => {
   const text1 = "Adam Kuzma,";
   const text2 = "Product Designer.";
   const index1 = useRef(0);
@@ -38,6 +38,11 @@ const TypingAnimation = () => {
         }
         index2.current++;
         setTimeout(typeLine2, typingSpeed);
+      } else {
+        // Animation complete
+        if (onComplete) {
+          onComplete();
+        }
       }
     };
 
@@ -51,10 +56,10 @@ const TypingAnimation = () => {
     return () => {
       clearTimeout(startTyping);
     };
-  }, []);
+  }, [onComplete]);
 
   return (
-    <div id="typing-container" className='mt-44 lg:mt-64 intro-header'>
+    <div id="typing-container" className='intro-header'>
       <div className="line-wrapper">
         <div id="line1" ref={line1Ref}></div>
       </div>

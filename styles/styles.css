@@ -9,6 +9,19 @@
   transition: all 0.9s cubic-bezier(0.25, 1.5, 0.5, 1);
 }
 
+.yey {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh; /* Ensure it centers vertically */
+}
+
+.intro-header {
+  margin-top: 30vh;
+}
+
 .intro-description {
   transform-origin: left center;
   transition: all 0.9s cubic-bezier(0.25, 1.5, 0.5, 1);
@@ -28,14 +41,18 @@
 
 .project {
   transition: all 0.3s ease-in-out;
-  padding: 8px 16px;
+  padding: 4px 16px;
   border-radius: 8px;
   margin-left: -16px;
 }
 
-.project:hover {
+.project-details {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.project-cursor {
   background: var(--background-secondary);
-  transition: all 0.3s ease-in-out;
 }
 
 /* Initial state of the image with blur and opacity */

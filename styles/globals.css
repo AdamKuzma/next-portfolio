@@ -91,10 +91,6 @@ b {
   font-weight: 600;
 }
 
-ul {
-  padding-left: 1.3rem;
-}
-
 ul li::marker {
   color: var(--stroke);
 }
@@ -162,6 +158,10 @@ footer p {
 
 .delay-6 {
   animation-delay: 0.3s;
+}
+
+.delay-7 {
+  animation-delay: 0.35s;
 }
 
 .delay-1h {
