@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import '../styles/styles.css';
 import 'lazysizes';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Head from 'next/head';
 import Nav from '../components/Nav';
 
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="preload" href="../fonts/PPMondwest-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
         <link rel="preload" href="../fonts/Inter.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
       </Head>
+      <SpeedInsights/>
       <Nav />
       <Component {...pageProps} />
     </>
