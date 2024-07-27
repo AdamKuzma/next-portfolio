@@ -3,7 +3,7 @@ import '../styles/styles.css';
 import 'lazysizes';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Head from 'next/head';
-import Nav from '../components/Nav';
+import NavTest from '../components/NavTest';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="preload" href="../fonts/Inter.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
       </Head>
       <SpeedInsights/>
-      <Nav />
+      <NavTest />
       <Component {...pageProps} />
     </>
   );

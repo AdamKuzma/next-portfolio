@@ -51,7 +51,7 @@ function Projects2({ scrolled, useStaticVariant }) {
 
       {/* Project Image */}
 
-      <div className='flex-1 relative sm:hidden'>
+      <div className='flex-1 hidden md:block relative'>
         <div className="w-full h-full flex items-center justify-center absolute top-0 left-0">
           {projects.map((project, index) => (
             <motion.div
@@ -60,9 +60,9 @@ function Projects2({ scrolled, useStaticVariant }) {
               style={{ opacity: hoveredProject === (project.img || project.video) ? 1 : 0 }}
             >
               {project.img ? (
-                <img className='rounded-lg max-h-[50vh] sm:hidden' src={project.img} alt={project.name} />
+                <img className='rounded-lg max-h-[50vh]' src={project.img} alt={project.name} />
               ) : (
-                <video className='rounded-lg max-h-[50vh] sm:hidden' src={project.video} autoPlay loop muted playsInline />
+                <video className='rounded-lg max-h-[50vh]' src={project.video} autoPlay loop muted playsInline />
               )}
             </motion.div>
           ))}
