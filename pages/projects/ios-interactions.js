@@ -40,16 +40,16 @@ function IOSInteractions() {
         I&apos;ve always been fascinated by unique interactions that feel natural and fluid. Driven by curiosity and desire to push boundaries of my craft, I started creating a series of Origami prototypes, where I experiment with new ways of interacting with mobile devices by leveraging iOS hardware capabilities.
       </p>
 
-      <div className='mb-3 flex rounded-lg gap-10'>
-        <div className='flex-1 rounded-lg relative h-[541px] overflow-hidden'>
-            <video className='lazyload rounded-lg absolute' ref={el => videoRefs.current[1] = el} muted autoplay loop playsInline preload="auto" poster=''>
+      <div className='mb-3 flex lg:flex-row flex-col rounded-lg gap-10 fade-in delay-5'>
+        <div className='flex-1 rounded-lg relative lg:h-[541px] overflow-hidden'>
+            <video className='lazyload rounded-lg' ref={el => videoRefs.current[1] = el} muted autoplay loop playsInline preload="auto" poster=''>
                 <source
                   type='video/mp4'
                   src='/videos/GyroLightA.mp4'></source>
             </video>
         </div>
-        <div className='flex-1 rounded-lg relative h-[541px] overflow-hidden'>
-            <video className='lazyload rounded-lg absolute top-[-15px]' ref={el => videoRefs.current[2] = el} muted autoplay loop playsInline preload="auto" poster=''>
+        <div className='flex-1 rounded-lg relative lg:h-[541px] overflow-hidden'>
+            <video className='lazyload rounded-lg top-[-15px]' ref={el => videoRefs.current[2] = el} muted autoplay loop playsInline preload="auto" poster=''>
                 <source
                   type='video/mp4'
                   src='/videos/GyroDarkA.mp4'></source>
@@ -60,6 +60,10 @@ function IOSInteractions() {
 
       <p className='mb-12 lg:w-3/5'>
         Payment card concept that is leveraging iOS gyroscope capabilities to tilt the card as you rotate the phone. I also experimented with simulated lighting and holographic shimmer effect which dynamically changes with device motion.
+      </p>
+
+      <p className='mb-12 lg:w-3/5'>
+        More coming soon...
       </p>
 
 
