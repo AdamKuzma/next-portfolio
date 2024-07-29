@@ -231,7 +231,7 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: 2px; /* Adjust as necessary */
+    bottom: 0px; /* Adjust as necessary */
     width: 100%;
     height: 2px; /* Adjust thickness */
     background-color: var(--gray); /* Match the text color */
@@ -242,10 +242,10 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: 2px; /* Adjust as necessary */
+    bottom: 0px; /* Adjust as necessary */
     width: 100%;
     height: 2px; /* Adjust thickness */
-    background-color: var(--gray1); /* Match the text color */
+    background-color: var(--text-secondary); /* Match the text color */
     z-index: -1;
   }
 
