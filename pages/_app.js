@@ -1,7 +1,8 @@
 import '../styles/globals.css';
 import '../styles/styles.css';
 import 'lazysizes';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import Head from 'next/head';
 import NavTest from '../components/NavTest';
 
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/Favicon.png?alt=media&token=582c5333-4b34-4c69-8579-90274b848d96" />
       </Head>
       <SpeedInsights/>
+      <Analytics/>
       <NavTest />
       <Component {...pageProps} />
     </>
