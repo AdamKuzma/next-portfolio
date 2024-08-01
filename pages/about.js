@@ -1,7 +1,7 @@
 import React from 'react';
 import SayHi from '../components/SayHi';
-import Footer from '../components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const About = () => {
   return (
@@ -26,9 +26,15 @@ const About = () => {
             </div>
           </div>
           <div className='lg:w-1/2 mt-16 lg:mt-0 fade-in delay-5'>
-            <img
+            <Image
               className='rounded-xl'
-              src='https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/Me-comp.jpg?alt=media&token=a4f00667-93b3-4b80-a81b-d8bdf3a57494'
+              alt='Adam Kuzma'
+              layout='responsive'
+              width={600}
+              height={900}
+              src='/images/HiAdam.jpg'
+              placeholder='blur'
+              blurDataURL='/images/HiAdam-comp.jpg'
             />
           </div>
         </div>
