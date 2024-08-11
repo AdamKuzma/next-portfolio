@@ -49,7 +49,7 @@ function IOSInteractions() {
             </video>
         </div>
         <div className='flex-1 rounded-lg relative lg:h-[541px] overflow-hidden'>
-            <video className='lazyload rounded-lg top-[-15px]' ref={el => videoRefs.current[2] = el} muted autoplay loop playsInline preload="auto" poster=''>
+            <video className='lazyload rounded-lg mt-[-15px]' ref={el => videoRefs.current[2] = el} muted autoplay loop playsInline preload="auto" poster=''>
                 <source
                   type='video/mp4'
                   src='/videos/GyroDarkA.mp4'></source>
@@ -58,14 +58,35 @@ function IOSInteractions() {
       </div>
       <p className='mb-8 annotation text-sm'>Gyroscope device motion interaction</p>
 
+      <p className='mb-24 lg:w-3/5'>
+        Payment card concept that is leveraging iOS gyroscope capabilities to tilt the card as you rotate the phone. Here, I also experimented with simulated lighting and holographic shimmer effect which dynamically changes with device motion.
+      </p>
+
+      <div className='mb-3 flex lg:flex-row flex-col rounded-lg gap-10'>
+        <div className='flex-1 rounded-lg relative lg:h-[580px] overflow-hidden'>
+            <video className='lazyload rounded-lg mt-[-70px]' ref={el => videoRefs.current[3] = el} muted autoplay loop playsInline preload="auto" poster=''>
+                <source
+                  type='video/mp4'
+                  src='/videos/PortalClosing.mp4'></source>
+            </video>
+        </div>
+        <div className='flex-1 rounded-lg relative lg:h-[580px] overflow-hidden'>
+            <video className='lazyload rounded-lg mt-[-70px]' ref={el => videoRefs.current[4] = el} muted autoplay loop playsInline preload="auto" poster=''>
+                <source
+                  type='video/mp4'
+                  src='/videos/SwipingShort.mp4'></source>
+            </video>
+        </div>
+      </div>
+      <p className='mb-8 annotation text-sm'>Masked view transitions</p>
+
       <p className='mb-12 lg:w-3/5'>
-        Payment card concept that is leveraging iOS gyroscope capabilities to tilt the card as you rotate the phone. I also experimented with simulated lighting and holographic shimmer effect which dynamically changes with device motion.
+        Masked views exploration, revealing additional information on tap. To create a sense of depth, the cards visually lift and lower along the Z-axis with smooth scale transitions. Details are dismissed by tapping the close button or swiping down beyond a specific threshold, creating a more natural interaction.
       </p>
 
       <p className='mb-12 lg:w-3/5'>
         More coming soon...
       </p>
-
 
       <SayHi></SayHi>
     </div>
