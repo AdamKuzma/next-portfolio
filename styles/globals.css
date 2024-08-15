@@ -242,14 +242,6 @@ footer p {
     max-width: 100%;
     padding: 0 25px;
   }
-
-  .intro-header {
-    font-size: 2.5rem; /* Adjust font size for smaller screens */
-  }
-
-  .intro-description {
-    font-size: 1rem; /* Adjust font size for smaller screens */
-  }
 }
 
 @media (max-width: 576px) {

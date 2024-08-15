@@ -289,6 +289,14 @@
   .image-wrapper {
     height: 480px;
   }
+
+  .intro-header {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .intro-description {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
 }
 
 .image-wrapper .image {
@@ -299,6 +307,17 @@
 .image-wrapper.loaded .image {
   filter: none;
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 25px;
+  }
+
+  
+}
+
 
 
 
