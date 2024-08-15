@@ -24,11 +24,18 @@
 
 .intro-header {
   margin-top: 30vh;
+  font-family: 'PP Mondwest', sans-serif;
+  font-size: 3.25rem;
+  line-height: 110%;
+  color: var(--text-primary);
 }
 
 .intro-description {
   transform-origin: left center;
   transition: all 0.9s cubic-bezier(0.25, 1.5, 0.5, 1);
+  color: var(--text-primary);
+  font-size: 17px;
+  line-height: 150%;
 }
 
 .intro-description.scrolled {
@@ -48,6 +55,11 @@
   padding: 4px 16px;
   border-radius: 8px;
   margin-left: -16px;
+}
+
+.project-name {
+  color: var(--text-primary);
+  font-size: 16px;
 }
 
 .project-details {

@@ -10,12 +10,12 @@
   font-style: normal;
 }
 
-@font-face {
+/*@font-face {
   font-family: 'Inter';
   src: url('../fonts/Inter.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
+}*/
 
 /** {
   -webkit-font-smoothing: antialiased;
@@ -71,20 +71,20 @@
 }
 
 h1 {
-  font-family: 'PP Mondwest', Inter, sans-serif;
+  font-family: 'PP Mondwest', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 96px;
 }
 
 h2 {
-  font-family: 'PP Mondwest', Inter, sans-serif;
+  font-family: 'PP Mondwest', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 body {
   background-color: var(--background-primary);
   color: var(--text-primary);
-  font-family: Inter;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.65;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 b {
@@ -100,11 +100,11 @@ p {
 }
 
 .mondwest {
-  font-family: 'PP Mondwest', Inter, sans-serif;
+  font-family: 'PP Mondwest', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .inter {
-  font-family: Inter, sans-serif;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 footer p {
@@ -208,19 +208,6 @@ footer p {
   height: 100vh; /* Full viewport height */
 }
 
-
-.intro-header {
-  font-family: 'PP Mondwest', sans-serif;
-  font-size: 3.25rem;
-  line-height: 110%;
-  color: var(--text-primary);
-}
-
-.intro-description {
-  color: var(--text-primary);
-  font-size: 1rem;
-  line-height: 150%;
-}
 
 /* Lazyload Image */
 

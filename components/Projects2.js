@@ -38,7 +38,7 @@ function Projects2({ scrolled, useStaticVariant }) {
             <Tab key={index} project={project} setPosition={setPosition} setHoveredProject={setHoveredProject}>
               <Link href={project.linkUrl}>
                 <div className={`project cursor-pointer fade-in ${delayClass} inline-block`}>
-                  <p className='relative'>{project.name}</p>
+                  <p className='relative project-name'>{project.name}</p>
                   <p className='relative project-details'>{project.year} · {project.type}</p>
                 </div>
               </Link>
