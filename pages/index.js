@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Projects2 from '../components/Projects2';
+import Projects from '../components/Projects';
 import TypingAnimation from '../components/TypingAnimation';
 import useTypingAnimation from '../hooks/useTypingAnimation';
 
@@ -40,19 +40,22 @@ const Home = () => {
       <main>
         <div className={`container home-main mx-auto px-4 lg:space-x-8 ${scrolled ? 'scrolled' : ''}`}>
           <div className=''>
+
+            {/* Intro */}
+
             <div className={`intro-description ${scrolled ? 'scrolled' : ''}`}>
-            {shouldPlayAnimation ? (
+              {shouldPlayAnimation ? (
 
-                // Typing Text
+                  // Typing Text
 
-                <>
-                  <TypingAnimation onComplete={() => setTypingCompleted(true)} />
-                  <p className='mt-10 max-w-lg fade-in delay-1h'>
-                    I’m a digital product designer, working at the intersection ↔ of design and engineering, passionate about crafting thoughtful human interactions with technology.
-                  </p>
-                </>
+                  <>
+                    <TypingAnimation onComplete={() => setTypingCompleted(true)} />
+                    <p className='mt-10 max-w-lg fade-in delay-1h'>
+                      I’m a digital product designer, working at the intersection ↔ of design and engineering, passionate about crafting thoughtful human interactions with technology.
+                    </p>
+                  </>
 
-              ) : (
+                ) : (
 
                 // Static Text
 
@@ -67,7 +70,11 @@ const Home = () => {
                 </>
               )}
             </div>
-            <Projects2 scrolled={scrolled} useStaticVariant={!shouldPlayAnimation} />
+
+            {/* Projects */}
+
+            <Projects scrolled={scrolled} useStaticVariant={!shouldPlayAnimation} />
+
           </div>
         </div>
       </main>

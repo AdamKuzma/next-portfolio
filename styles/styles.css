@@ -4,28 +4,10 @@
   min-height: 102vh;
 }
 
-.home-projects {
-  transform: scale(0.85);
-  transform-origin: left center;
-  opacity: 0.3;
-  filter: blur(3px);
-  animation: fadeInn 0.6s forwards 3.5s; /* Adding fade-in animation with delay */
-  transition: all 0.9s cubic-bezier(0.25, 1.5, 0.5, 1);
-}
-
-.yey {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  min-height: 100vh; /* Ensure it centers vertically */
-}
-
 .intro-header {
   margin-top: 30vh;
   font-family: 'PP Mondwest', sans-serif;
-  font-size: 3.25rem;
+  font-size: 3.2rem;
   line-height: 110%;
   color: var(--text-primary);
 }
@@ -42,6 +24,15 @@
   transform: translateY(-265px) scale(0.85);
   opacity: 0.3;
   filter: blur(4px);
+}
+
+.home-projects {
+  transform: scale(0.85);
+  transform-origin: left center;
+  opacity: 0.3;
+  filter: blur(3px);
+  animation: fadeInn 0.6s forwards 3.5s; /* Adding fade-in animation with delay */
+  transition: all 0.9s cubic-bezier(0.25, 1.5, 0.5, 1);
 }
 
 .home-projects.scrolled {
@@ -160,6 +151,7 @@
     padding: 3px 12px;
   }
 
+/*
   .iconContainer {
     width: 24px;
     height: 24px;
@@ -189,7 +181,7 @@
     transform: translate(-50%, -86px);
     transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out, transform 0.25s ease-in-out;
   }
-
+*/
 
 /* Project */
 
@@ -213,22 +205,26 @@
 
 /* Contact */
 
-.contacts b {
+.contacts h1 {
     margin-bottom: 30px;
     display: inline-flexbox;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .contacts p {
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     text-decoration: underline;
     text-decoration-color: var(--gray);
+    color: var(--text-primary);
     text-decoration-thickness: 2px;
     display: inline-block;
     width: max-content;
   }
 
   .contacts p:hover {
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     text-decoration: underline;
     text-decoration-color: var(--text-secondary);
     text-decoration-thickness: 2px;
@@ -299,6 +295,21 @@
   }
 }
 
+@media (max-width: 576px) {
+  .intro-header {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+    margin-top: 22vh;
+  }
+
+  .intro-description {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .home-projects.scrolled {
+    margin-bottom: -5vh;
+  }
+}
+
 .image-wrapper .image {
   object-fit: cover;
   filter: blur(12px);
@@ -314,11 +325,7 @@
     max-width: 100%;
     padding: 0 25px;
   }
-
-  
 }
-
-
 
 
 

@@ -1,46 +1,109 @@
-import React from 'react';
-import ProjectCard from './ProjectCard';
+import React, { useState, useRef } from 'react';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
 
-function Projects() {
+function Projects({ scrolled, useStaticVariant }) {
+  const [hoveredProject, setHoveredProject] = useState(null);
+  const [position, setPosition] = useState({ left: 0, top: 0, width: 0, height: 0, opacity: 0 });
+
+  const projects = [
+    { name: 'iOS Interaction Prototypes', year: '2024', type: 'Interaction design, prototyping', video: '/videos/GyroLightA.mp4', linkUrl: '/projects/ios-interactions' },
+    { name: 'Clienteling Filters', year: '2024', type: 'Product design', img: '/images/CLFeaturedB.png', linkUrl: '/projects/clienteling-filters' },
+    { name: 'Digital Store System', year: '2024', type: 'Design system', video: '/videos/DSFeatured1.mp4', linkUrl: '/projects/digital-store-system' },
+    { name: 'Amor Components', year: '2022', type: 'Design system', video: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FResponsive-Amor-2.mp4?alt=media&token=143ebad0-425c-4592-ae14-efcff99bd381', linkUrl: '/projects/amor-components' },
+    { name: 'Member Rewards', year: '2023', type: 'Product design', img: '/images/MRFeaturedB.png', linkUrl: '/projects/member-rewards' }
+  ];
+
   return (
-    <div className='mb-12 fade-in delay-2'>
-        <ProjectCard
-            className='py-8 px-12 lg:py-16 lg:px-48 bg-[#F4F4F5] rounded-lg '
-            title="Clienteling Filters"
-            description="2024 · Product Design"
-            mediaType="image"
-            mediaSrc="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/featured%2FCL%20-%20Clienteling%20Filters.png?alt=media&token=b384fcfc-79d5-48ab-9a42-7eb6a0d38577"
-            linkUrl="/projects/clienteling-filters"
-        />
+    <div className={`home-projects mt-24 flex flex-col md:flex-row lg:flex-row ${scrolled ? 'scrolled' : ''}`}>
 
-        <ProjectCard
-            className='py-8 px-10 lg:py-16 lg:px-48 mt-14 lg:mt-24 bg-[#F4F4F5] rounded-lg'
-            title="Digital Store System"
-            description="2024 · Design System"
-            mediaType="video"
-            mediaSrc="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/featured%2FDS%20-%20Featured2.mp4?alt=media&token=9f28cda3-3866-48f6-85f0-4c2bcf262d0b"
-            linkUrl="/projects/digital-store-system"
-        />
+      {/* Project List */}
 
-        <ProjectCard
-            className='py-4 px-0 lg:py-12 lg:px-8 mt-14 lg:mt-24 bg-neutral-100 rounded-lg'
-            title="Amor Components"
-            description="2022 · Design System"
-            mediaType="image"
-            mediaSrc="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/featured%2FAmor%20Components.png?alt=media&token=a9bb7924-a653-4754-981d-222b11f5390b"
-            linkUrl="/projects/amor-components"
-        />
+      <div className={`basis-5/12 ${scrolled ? '' : 'pointer-events-none'}`}>
+        <ul
+          onMouseLeave={() => {
+            setPosition((pv) => ({
+              ...pv,
+              opacity: 0,
+            }));
+            setHoveredProject(null); // Ensure hoveredProject is reset
+          }}
+          className='relative flex flex-col items-start'
+        >
+          {projects.map((project, index) => {
+             const delayClass = useStaticVariant
+             ? `delay-${index + 3}`
+             : `delay-${index + 3}h`;
+             return (
+            <Tab key={index} project={project} setPosition={setPosition} setHoveredProject={setHoveredProject}>
+              <Link href={project.linkUrl}>
+                <div className={`project cursor-pointer fade-in ${delayClass} inline-block`}>
+                  <p className='relative project-name'>{project.name}</p>
+                  <p className='relative project-details'>{project.year} - {project.type}</p>
+                </div>
+              </Link>
+            </Tab>
+            );
+          })}
+          <Cursor position={position} />
+        </ul>
+      </div>
 
-        <ProjectCard
-            className='py-8 px-8 lg:py-20 lg:px-40 mt-14 lg:mt-24 bg-neutral-100 rounded-lg'
-            title="Member Rewards"
-            description="2023 · Product Design"
-            mediaType="image"
-            mediaSrc="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/featured%2FMember-Rewards-FT.png?alt=media&token=7d90212c-a066-4c6b-8d5f-d29dc439a9c5"
-            linkUrl="/projects/member-rewards"
-        />
+      {/* Project Image */}
+
+      <div className='basis-7/12 hidden md:block relative lg:left-[80px]'>
+        <div className="w-full h-full flex items-center justify-center absolute top-0 left-0">
+          {projects.map((project, index) => (
+            <motion.div
+              key={index}
+              className={`absolute transition-all duration-500 ease-in-out ${hoveredProject === (project.img || project.video) ? 'unblurred' : 'blurred'}`}
+              style={{ opacity: hoveredProject === (project.img || project.video) ? 1 : 0 }}
+            >
+              {project.img ? (
+                <img className='rounded-lg max-h-[50vh]' src={project.img} alt={project.name} />
+              ) : (
+                <video className='rounded-lg max-h-[50vh]' src={project.video} autoPlay loop muted playsInline />
+              )}
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
     </div>
   );
 }
+
+const Tab = ({ children, project, setPosition, setHoveredProject }) => {
+  const ref = useRef(null);
+
+  return (
+    <li
+      ref={ref}
+      onMouseEnter={() => {
+        if (!ref.current) return;
+
+        const { width, height, top, left } = ref.current.getBoundingClientRect();
+        const parentTop = ref.current.offsetParent.getBoundingClientRect().top;
+        const parentLeft = ref.current.offsetParent.getBoundingClientRect().left;
+
+        setPosition({
+          width,
+          height,
+          top: top - parentTop,
+          left: left - parentLeft,
+          opacity: 1,
+        });
+        setHoveredProject(project.img || project.video); // Set hoveredProject to the current project media
+      }}
+      className='mb-2 project relative cursor-pointer inline-block z-20'
+    >
+      {children}
+    </li>
+  );
+};
+
+const Cursor = ({ position }) => {
+  return <motion.div animate={position} className='project-cursor absolute rounded-lg z-0' />;
+};
 
 export default Projects;

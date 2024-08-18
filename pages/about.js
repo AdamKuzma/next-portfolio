@@ -7,9 +7,9 @@ const About = () => {
   return (
     <>
       <div className='container'>
-        <div className='lg:flex mt-32 mb-16 gap-20'>
+        <div className='lg:flex mt-32 mb-16 gap-12'>
           <div className='lg:w-1/2 fade-in delay-0'>
-            <h1 className='text-7xl lg:text-8xl'>About</h1>
+            <h1 className='text-7xl lg:text-7xl'>About</h1>
             <div className='mt-6 mb-18'>
               <p className='mt-8 fade-in delay-1'>
                 I&apos;m a product designer in NYC, interested in creating delightful experiences at the intersection of design and technology.

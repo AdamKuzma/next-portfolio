@@ -84,7 +84,7 @@ body {
   color: var(--text-primary);
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.65;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 b {
@@ -192,9 +192,6 @@ footer p {
   animation-delay: 3.9s;
 }
 
-
-/* Global styles */
-
 .container {
   width: 920px;
   margin: 0 auto;
@@ -202,6 +199,13 @@ footer p {
   flex-direction: column;
   padding: 0 25px;
 }
+
+.container-test {
+  width: 920px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
 
 .vh-100 {
   justify-content: center; /* Center vertically */
@@ -225,7 +229,7 @@ footer p {
 @media (max-width: 1200px) {
   .container {
     width: 100%;
-    max-width: 920px;
+    max-width: 750px;
   }
 }
 
@@ -249,13 +253,5 @@ footer p {
     width: 100%;
     max-width: 100%;
     padding: 0 25px;
-  }
-
-  .intro-header {
-    font-size: 2.5rem; /* Adjust font size for smaller screens */
-  }
-
-  .intro-description {
-    font-size: 1rem; /* Adjust font size for smaller screens */
   }
 }
