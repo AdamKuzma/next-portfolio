@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Projects2 from '../components/Projects2';
 import TypingAnimation from '../components/TypingAnimation';
 import useTypingAnimation from '../hooks/useTypingAnimation';
 
@@ -67,7 +66,6 @@ const Home = () => {
                 </>
               )}
             </div>
-            <Projects2 scrolled={scrolled} useStaticVariant={!shouldPlayAnimation} />
           </div>
         </div>
       </main>
