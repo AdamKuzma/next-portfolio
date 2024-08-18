@@ -10,7 +10,7 @@ function ProjectHeader({ title, company, year, scope }) {
         <div className='lg:hidden mb-12 mt-2 fade-in delay-2'>
           <div>{year} · {scope} · {company}</div>
         </div>
-        <div className='hidden lg:flex flex-wrap project-tags mb-24 mt-4 fade-in delay-2'>
+        <div className='hidden lg:flex flex-wrap project-tags mb-16 mt-4 fade-in delay-2'>
             <div>{company}</div>
             <div>{year}</div>
             <div>{scope}</div>
