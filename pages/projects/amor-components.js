@@ -36,7 +36,7 @@ function AmorComponents() {
         </p>
 
         <p className='mb-12 lg:w-3/5 fade-in delay-4'>
-            The redesigned CMS tool, improved the efficiency of our marketing team&apos;s content management processes, currently with over 1,000 components in use across our websites.
+            The redesigned CMS tool, improved the efficiency of our marketing team&apos;s content management processes, currently with over 4,000 components in use across our websites.
         </p>
 
         <div className='flex mb-3 py-8 px-8 lg:py-12 lg:px-12 bg-neutral-100 fade-in delay-5 rounded-lg'>
@@ -141,7 +141,7 @@ function AmorComponents() {
 
         <b className='mb-4 block'>Impact</b>
         <p className='mb-8 lg:w-3/5'>
-            Amor Content Components have empowered everyone in the organization to launch new marketing pages rapidly and consistently, improving our website&apos;s interface with confidence. Two years after their release, we&apos;ve have recorded over 3000 component instances used across our websites.
+            Amor Content Components have empowered everyone in the organization to launch new marketing pages rapidly and consistently, improving our website&apos;s interface with confidence. Two years after their release, we&apos;ve have recorded over 4,000 component instances used across our websites.
         </p>
 
       <SayHi></SayHi>
