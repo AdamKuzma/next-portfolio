@@ -46,11 +46,11 @@ function ClientelingFilters() {
 
       <b className='mb-4 block fade-in delay-3'>Context</b>
       <p className='mb-6 lg:w-3/5 fade-in delay-3'>
-        Jewelry experts at Signet&apos;s stores use the Clienteling iPad app to build stronger relationships with customers. Customer outreach is one of the most frequently performed tasks in-store. 
+        Jewelry Consultants at Signet&apos;s stores use the Clienteling iPad app to build stronger relationships with customers. Customer outreach is one of the most frequently performed tasks in-store. 
       </p>
 
       <p className='mb-12 lg:w-3/5 fade-in delay-4'>
-        Jewelry experts would typically use Clienteling&apos;s customer search filters to find specific customers or customer segments for targeted communication and reach out to them via email or schedule a reminder to contact them at a later time - for example to promote a new line of engagement rings to customers who would potentially be interested.
+        Jewelry Consultants would typically use Clienteling&apos;s customer search filters to find specific customers or customer segments for targeted communication and reach out to them via email or schedule a reminder to contact them at a later time - for example to promote a new line of engagement rings to customers who would potentially be interested.
       </p>
 
       <div className='mb-12 px-12 py-6 lg:px-56 lg:py-16 bg-[#F2F2F4] rounded-lg'>
@@ -65,11 +65,11 @@ function ClientelingFilters() {
 
       <b className='mb-4 block'>Problem</b>
       <p className='mb-6 lg:w-3/5'>
-        As the search capabilities kept evolving and new filters were added, their organization started to become unintuitive. New Jewelry Experts faced a steep learning curve, while experienced JEs asked for more filtering options. Many of the frequently used filters were hidden under the second navigation level, which led to poor discoverability.
+        As the search capabilities kept evolving and new filters were added, their organization started to become unintuitive. New Jewelry Consultants faced a steep learning curve, while experienced JCs asked for more filtering options. Many of the frequently used filters were hidden under the second navigation level, which led to poor discoverability.
       </p>
 
       <p className='mb-12 lg:w-3/5'>
-        Once the filters for a specific customer segment were applied, there was no visibility to the contact method each customer was opted into, meaning the JEs would often find out that some of the selected customers don&apos;t have an email address in their records.
+        Once the filters for a specific customer segment were applied, there was no visibility to the contact method each customer was opted into, meaning the JCs would often find out that some of the selected customers don&apos;t have an email address in their records.
       </p>
 
       <div className='mb-12 px-6 py-6 lg:px-44 lg:py-16 bg-[#F2F2F4] rounded-lg'>
@@ -80,11 +80,11 @@ function ClientelingFilters() {
 
       <b className='mb-4 block'>Solution</b>
       <p className='mb-6 lg:w-3/5'>
-        In collaboration with product managers, researchers, and engineers, I led the design for the new customer filters for Jewelry Experts from discovery to implementation.
+        In collaboration with product managers, researchers, and engineers, I led the design for the new customer filters for Jewelry Consultants from discovery to implementation.
       </p>
 
       <p className='mb-6 lg:w-3/5'>
-        The new design offered a simple and approachable filtering experience for new JEs, while maintaining the functionality and flexibility appreciated by tenured JEs.
+        The new design offered a simple and approachable filtering experience for new JCs, while maintaining the functionality and flexibility appreciated by tenured JCs.
       </p>
 
       <p className='mb-6 lg:w-3/5'>
@@ -92,7 +92,7 @@ function ClientelingFilters() {
       </p>
 
       <p className='mb-12 lg:w-3/5'>
-        After testing two design variants with Jewelry Experts in-store, we&apos;ve taken the features that tested positively to inform the final designs below.
+        After testing two design variants with Jewelry Consultants in-store, we&apos;ve taken the features that tested positively to inform the final designs below.
       </p>
 
       <div className='mb-12 py-4 px-6 lg:px-44 lg:py-16 bg-[#F2F2F4] rounded-lg'>
@@ -152,7 +152,7 @@ function ClientelingFilters() {
       <p className='mb-8 annotation text-sm'>Contact methods</p>
 
       <p className='mb-4 lg:w-3/5'>
-        JEs can now see the contact methods customers are opted-into and filter for specific methods to schedule a method-specific task.
+        JCs can now see the contact methods customers are opted-into and filter for specific methods to schedule a method-specific task.
       </p>
 
       <p className='mb-12 lg:w-3/5'>
