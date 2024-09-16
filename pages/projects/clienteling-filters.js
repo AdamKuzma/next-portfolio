@@ -156,7 +156,7 @@ function ClientelingFilters() {
       </p>
 
       <p className='mb-12 lg:w-3/5'>
-        Previously, scheduled tasks had a &apos;generic outreach&apos; type which required the JE to spend additional time to view the customer profile in search of available contact information.
+        Previously, scheduled tasks had a &apos;generic outreach&apos; type which required the JC to spend additional time to view the customer profile in search of available contact information.
       </p>
 
 
