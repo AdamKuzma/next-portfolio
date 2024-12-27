@@ -33,7 +33,7 @@ function MemberRewards() {
         </p>
 
         <p className='mb-12 lg:w-3/5 fade-in delay-3'>
-            I conducted an audit of our apps, mapping all of the styles, spacings, treatments, and components we were using. Next, I developed a comprehensive system that was minimal enough to converge all the inconsistencies into fewer styles and components, while still being simple to use for our designers.
+          I took the lead in designing the experience for applying Member Rewards in the shopping bag when shopping online, collaborating closely with architects and the program team. The goal of this project is to enhance our loyalty program, increasing engagement and encouraging repeat purchases.
         </p>
 
       <div className='flex gap-4 lg:gap-10 mb-12 py-6 px-4 lg:py-12 lg:px-12 bg-neutral-100 rounded-lg fade-in delay-4'>
