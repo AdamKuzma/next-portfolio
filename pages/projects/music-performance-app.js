@@ -118,7 +118,7 @@ function MusicPerformanceApp() {
             The project focused on modernizing the visual design, improving usability, and interaction design across various device types. I also wrote Swift prototypes to explore nuanced interaction details and elevate the overall level of craftsmanship. 
         </p>
         <p className='mb-6 lg:w-3/5 fade-in delay-7'>
-            Full details and visuals will be shared after the app's public release.
+            Full details and visuals will be shared after the app&apos;s public release.
         </p>
 
       <SayHi></SayHi>
