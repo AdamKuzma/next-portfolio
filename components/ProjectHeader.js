@@ -4,7 +4,7 @@ import Link from 'next/link';
 function ProjectHeader({ title, company, year, scope }) {
   return (
 
-    <div className='mt-32'>
+    <div className='mt-24'>
         <Link className="back inline-block text-2xl mb-6 fade-in delay-0" href="/">←</Link>
         <h1 className='text-4xl lg:text-7xl fade-in delay-1 antialiased'>{title}</h1>
         <div className='lg:hidden mb-12 mt-2 fade-in delay-2'>

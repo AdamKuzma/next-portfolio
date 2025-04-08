@@ -131,7 +131,7 @@
     text-decoration: none;
     font-size: 14px;
     font-weight: 400;
-    padding: 12px 20px;
+    padding: 10px 20px;
     border-radius: 40px;
     height: auto;
     color: var(--text-primary);
@@ -141,6 +141,8 @@
 
   .navigationHover, .navigation ul li a:hover {
     background-color: var(--menu-hover-bg);
+    margin: 2px 0px;
+    height: calc(100% - 6px);
   }
 
   .themeToggle {
@@ -151,37 +153,6 @@
     padding: 3px 12px;
   }
 
-/*
-  .iconContainer {
-    width: 24px;
-    height: 24px;
-    display: block;
-  }
-
-  .tooltip {
-    position: absolute;
-    padding: 4px 10px;
-    font-size: 12px;
-    left: 50%;
-    background-color: var(--background-primary);
-    border: solid 1px var(--menu-border);
-    color: var(--text-primary);
-    border-radius: 8px;
-    opacity: 0;
-    visibility: visible;
-    transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out, transform 0.25s ease-in-out;
-    transform: translate(-50%, -80px);
-    pointer-events: none;
-  }
-
-  .tooltip.visible {
-    opacity: 1;
-    left: 50%;
-    visibility: visible;
-    transform: translate(-50%, -86px);
-    transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out, transform 0.25s ease-in-out;
-  }
-*/
 
 /* Project */
 

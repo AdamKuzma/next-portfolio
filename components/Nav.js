@@ -106,7 +106,7 @@ const Tab = ({ children, setPosition, tooltipText, isThemeSwitch = false }) => {
 };
 
 const Cursor = ({ position }) => {
-  return <motion.li animate={position} className='navigationHover absolute z-0 h-11 rounded-full' />;
+  return <motion.li animate={position} className='navigationHover absolute z-0 h-10 rounded-full' />;
 };
 
 export default Nav;

@@ -164,6 +164,18 @@ footer p {
   animation-delay: 0.35s;
 }
 
+.delay-8 {
+  animation-delay: 0.4s;
+}
+
+.delay-9 {
+  animation-delay: 0.45s;
+}
+
+.delay-10 {
+  animation-delay: 0.5s;
+}
+
 .delay-1h {
   animation-delay: 3.3s;
 }

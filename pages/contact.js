@@ -6,7 +6,7 @@ const Contact = () => (
       <div className='contacts mt-36 mx-4 lg:mx-0 flex flex-col'>
         <h1 className='fade-in delay-0'>Contact</h1>
         <p className='fade-in delay-1'><a href='mailto:adam@esecure.cc' target='_blank' rel='noopener noreferrer'>Email</a></p>
-        <p className='fade-in delay-2'><a href='https://x.com/admakzm' target='_blank' rel='noopener noreferrer'>X</a></p>
+        <p className='fade-in delay-2'><a href='https://x.com/admakzm' target='_blank' rel='noopener noreferrer'>Twitter</a></p>
         <p className='fade-in delay-3'><a href='https://layers.to/admakuzma' target='_blank' rel='noopener noreferrer'>Layers</a></p>
         <p className='fade-in delay-4'><a href='https://read.cv/adamk' target='_blank' rel='noopener noreferrer'>Read.cv</a></p>
         <p className='fade-in delay-5'><a href='https://github.com/AdamKuzma' target='_blank' rel='noopener noreferrer'>GitHub</a></p>
