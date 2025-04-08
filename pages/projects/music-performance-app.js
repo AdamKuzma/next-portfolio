@@ -88,7 +88,7 @@ function MusicPerformanceApp() {
       />
     
         <div className='mb-4 flex lg:flex-row flex-col rounded-lg fade-in delay-4'>
-            <div className='flex-1 rounded-lg relative overflow-hidden bg-neutral-100'>
+            <div className='flex-1 rounded-lg relative overflow-hidden'>
                 <div className="relative w-full" style={{ paddingTop: '56.25%' }}> {/* 56.25% = 9/16 = 16:9 aspect ratio */}
                     <video 
                         className='lazyload rounded-lg absolute top-0 left-0 w-full h-full object-cover' 
