@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import ProjectHeader from '../../components/ProjectHeader';
 import SayHi from '../../components/SayHi';
-import Link from 'next/link';
 
 function MusicPerformanceApp() {
   const videoRefs = useRef([]);
@@ -79,47 +78,40 @@ function MusicPerformanceApp() {
 
   // Original content (only shown after authentication)
   return (
-    <div className='container mx-auto'>
+    <div className="container mx-auto">
       <ProjectHeader
         title="Music Performance App"
         company="Freelance"
         year="2025"
         scope="Mobile App"
       />
-    
-        <div className='mb-4 flex lg:flex-row flex-col rounded-lg fade-in delay-4'>
-            <div className='flex-1 rounded-lg relative overflow-hidden bg-neutral-100'>
-                <div className="relative w-full" style={{ paddingTop: '56.25%' }}> {/* 56.25% = 9/16 = 16:9 aspect ratio */}
-                    <video 
-                        className='lazyload rounded-lg absolute top-0 left-0 w-full h-full object-cover' 
-                        ref={el => videoRefs.current[1] = el} 
-                        muted 
-                        autoPlay 
-                        loop 
-                        playsInline 
-                        preload="auto" 
-                        poster=''
-                    >
-                        <source
-                            type='video/mp4'
-                            src='/videos/flipfolder/ff-featured-wide.mp4'
-                        ></source>
-                    </video>
-                </div>
+
+      {/* Project Intro */}
+      <p className="mb-12 lg:w-3/5 fade-in delay-4">
+        A mobile app that synchronizes digital sheet music across musical band members in real time, replacing traditional paper folders for seamless performances.
+      </p>
+
+      <div className="mb-3 flex lg:flex-row flex-col rounded-lg fade-in delay-5">
+        <div className="flex-1 rounded-lg relative overflow-hidden bg-neutral-100">
+            <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+                <video 
+                    className="lazyload rounded-lg absolute top-0 left-0 w-full h-full object-cover" 
+                    ref={el => videoRefs.current[1] = el} 
+                    muted 
+                    autoPlay 
+                    loop 
+                    playsInline 
+                    preload="auto" 
+                    poster=""
+                >
+                    <source
+                        type="video/mp4"
+                        src="/videos/flipfolder/ff-featured.mp4"
+                    ></source>
+                </video>
             </div>
         </div>
-        <p className='mb-12 annotation text-sm fade-in delay-4'>In collaboration with Lynn Tang and J.W. Pepper team</p>
-
-        {/* Project Intro */}
-        <p className='mb-6 lg:w-3/5 fade-in delay-5'>
-            I partnered with J.W. Pepper to lead the redesign of a mobile app used by music ensembles to view and manage digital sheet music in live performance settings.
-        </p>
-        <p className='mb-6 lg:w-3/5 fade-in delay-6'>
-            The project focused on modernizing the visual design, improving usability, and interaction design across various device types. I also wrote Swift prototypes to explore nuanced interaction details and elevate the overall level of craftsmanship. 
-        </p>
-        <p className='mb-6 lg:w-3/5 fade-in delay-7'>
-            Full details and visuals will be shared after the app's public release.
-        </p>
+      </div>
 
       <SayHi></SayHi>
     </div>
