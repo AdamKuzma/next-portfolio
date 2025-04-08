@@ -112,7 +112,7 @@ function MusicPerformanceApp() {
 
         {/* Project Intro */}
         <p className='mb-6 lg:w-3/5 fade-in delay-5'>
-            I partnered with J.W. Pepper, a leading sheet music provider, to lead the redesign of a mobile app used by music ensembles to view and manage digital sheet music in live performance settings.
+            I partnered with J.W. Pepper, a leading sheet music provider, to redesign a mobile app that helps music ensembles view and manage digital sheet music during live performances.
         </p>
         <p className='mb-6 lg:w-3/5 fade-in delay-6'>
             The project focused on modernizing the visual design, improving usability, and interaction design across various device types. I also wrote Swift prototypes to explore nuanced interaction details and elevate the overall level of craftsmanship. 
