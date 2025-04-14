@@ -204,6 +204,22 @@ footer p {
   animation-delay: 3.9s;
 }
 
+.delay-8h {
+  animation-delay: 4.0s;
+}
+
+.delay-9h {
+  animation-delay: 4.1s;
+}
+
+.delay-10h {
+  animation-delay: 4.2s;
+}
+
+.delay-11h {
+  animation-delay: 4.3s;
+}
+
 .vh-100 {
   justify-content: center; /* Center vertically */
   height: 100vh; /* Full viewport height */
