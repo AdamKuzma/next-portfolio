@@ -98,7 +98,7 @@ function MusicPerformanceApp() {
                         loop 
                         playsInline 
                         preload="auto" 
-                        poster=''
+                        poster='/images/flipfolder/ff-featured-lazy.png'
                     >
                         <source
                             type='video/mp4'
