@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 function MusicPerformanceApp() {
   const videoRefs = useRef([]);
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(true);
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
@@ -115,10 +115,10 @@ function MusicPerformanceApp() {
             I partnered with J.W. Pepper, a leading sheet music provider, to redesign a mobile app that helps music ensembles perform with digital scores in live settings.
         </p>
         <p className='mb-6 lg:w-3/5 fade-in delay-6'>
-            The project focused on modernizing the visual design, improving usability, and interaction design across various device types. I also wrote Swift prototypes to explore nuanced interaction details and elevate the overall level of craftsmanship. 
+            The project focused on modernizing the visual design, enhancing usability, and refining interaction patterns across devices. I also built Swift prototypes to explore subtle interaction details and raise the overall level of craftsmanship.
         </p>
         <p className='mb-6 lg:w-3/5 fade-in delay-7'>
-            Full details and visuals will be shared after the app&apos;s public release.
+            To respect client confidentiality, the full case study is available privately upon request.
         </p>
 
       <SayHi></SayHi>
