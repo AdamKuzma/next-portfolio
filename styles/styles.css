@@ -94,6 +94,22 @@
   @media (max-width: 768px) {
     .navigationWrapper {
       bottom: 20px;
+      width: 100%;
+      padding: 0 25px;
+    }
+    .navigation {
+      padding: 2px 15px !important;
+      /* width: 100%; */
+      display: flex;
+    }
+    .navigation > :first-child {
+      margin-left: -5px
+    }
+    .navigationItem {
+      flex: 1;
+    }
+    .themeToggle {
+      flex: 0;
     }
   }
 
@@ -125,6 +141,16 @@
 
   .navigation ul li {
     display: list-item;
+  }
+
+  .navigationItem {
+    flex: 1;
+    text-align: center;
+    transition: transform 0.1s ease;
+  }
+
+  .navigationItem:active {
+    transform: scale(0.92);
   }
 
   .navigationItem a, .navigation ul li a {
