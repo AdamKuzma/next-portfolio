@@ -75,12 +75,17 @@ const Tab = ({ children, setPosition, isThemeSwitch = false }) => {
       onMouseEnter={() => {
         if (!ref.current) return;
 
-        const { width } = ref.current.getBoundingClientRect();
+        // Get the a tag inside the li
+        const linkElement = ref.current.querySelector('a');
+        if (!linkElement) return;
+
+        const { width, left } = linkElement.getBoundingClientRect();
+        const parentLeft = ref.current.offsetParent.getBoundingClientRect().left;
 
         setPosition({
           width,
           opacity: 1,
-          left: ref.current.offsetLeft,
+          left: left - parentLeft,
         });
       }}
       className={`navigationItem relative z-10 cursor-pointer ${
