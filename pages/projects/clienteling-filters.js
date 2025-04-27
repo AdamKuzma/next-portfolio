@@ -95,7 +95,7 @@ function ClientelingFilters() {
       <div className='mb-4 px-6 py-6 lg:px-8 lg:py-24 bg-[#F2F2F4] rounded-lg'>
         <img className='w-full h-auto object-contain rounded-lg' src="/images/clienteling/clienteling-variants.png" alt="Clienteling Variants"/>
       </div>
-      <p className='mb-12 annotation text-sm'>Two different filter variants we've tested with store associates</p>
+      <p className='mb-12 annotation text-sm'>Two different filter variants we&apos;ve tested with store associates</p>
 
       <b className='mb-4 block'>Design Direction</b>
 
