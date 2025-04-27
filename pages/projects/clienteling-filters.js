@@ -46,31 +46,31 @@ function ClientelingFilters() {
 
       <b className='mb-4 block fade-in delay-3'>Context</b>
       <p className='mb-6 lg:w-3/5 fade-in delay-3'>
-        Jewelry Consultants at Signet&apos;s stores use the Clienteling iPad app to build stronger relationships with customers. Customer outreach is one of the most frequently performed tasks in-store. 
+        Store associates at Signet&apos;s stores use the Clienteling iPad app to build stronger relationships with customers through in-store interactions and personalized outreach. 
       </p>
 
       <p className='mb-12 lg:w-3/5 fade-in delay-4'>
-        Jewelry Consultants would typically use Clienteling&apos;s customer search filters to find specific customers or customer segments for targeted communication and reach out to them via email or schedule a reminder to contact them at a later time - for example to promote a new line of engagement rings to customers who would potentially be interested.
+        Through customer search, associates can find the right customers visiting stores or for outreach initiatives - for example to promote a new line of engagement rings to those who would be interested.
       </p>
 
-      <div className='mb-12 px-12 py-6 lg:px-56 lg:py-16 bg-[#F2F2F4] rounded-lg'>
+      <div className='mb-12 px-12 py-6 lg:px-24 lg:py-16 bg-[#F2F2F4] rounded-lg'>
         <img
           className='w-full h-auto object-contain rounded-lg'
-          src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FClienteling%20Context.png?alt=media&token=d77d10bb-5364-44c3-af58-43676044aa6a" 
-          alt="Digital Store System"
+          src="/images/clienteling/clienteling-context.png" 
+          alt="Clienteling Context"
         />
       </div>
 
       {/* Problem */}
 
       <b className='mb-4 block'>Problem</b>
-      <p className='mb-6 lg:w-3/5'>
-        As the search capabilities kept evolving and new filters were added, their organization started to become unintuitive. New Jewelry Consultants faced a steep learning curve, while experienced JCs asked for more filtering options. Many of the frequently used filters were hidden under the second navigation level, which led to poor discoverability.
+      <p className='mb-12 lg:w-3/5'>
+        As the search capabilities kept evolving and new filters were added, their organization started to become unintuitive. New store associates faced a steep learning curve, while experienced store associates asked for more filtering options. Many of the frequently used filters were hidden under the second navigation level, which led to poor discoverability.
       </p>
 
-      <p className='mb-12 lg:w-3/5'>
+      {/* <p className='mb-12 lg:w-3/5'> 
         Once the filters for a specific customer segment were applied, there was no visibility to the contact method each customer was opted into, meaning the JCs would often find out that some of the selected customers don&apos;t have an email address in their records.
-      </p>
+      </p> */}
 
       <div className='mb-12 px-6 py-6 lg:px-44 lg:py-16 bg-[#F2F2F4] rounded-lg'>
         <img className='w-full h-auto object-contain rounded-lg' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FClienteling%20-%20Current%20Filters.png?alt=media&token=90228814-411d-4477-8d71-eff32cc3a03e" alt="Digital Store System" />
@@ -80,19 +80,35 @@ function ClientelingFilters() {
 
       <b className='mb-4 block'>Solution</b>
       <p className='mb-6 lg:w-3/5'>
-        In collaboration with product managers, researchers, and engineers, I led the design for the new customer filters for Jewelry Consultants from discovery to implementation.
+        In collaboration with product managers, researchers, and engineers, I led the design for the new customer filters for store associates from discovery to implementation.
       </p>
 
       <p className='mb-6 lg:w-3/5'>
-        The new design offered a simple and approachable filtering experience for new JCs, while maintaining the functionality and flexibility appreciated by tenured JCs.
-      </p>
-
-      <p className='mb-6 lg:w-3/5'>
-        I also streamlined outreach and creating outreach reminders by bringing visibility to available contact methods to inform decision-making and remove unnecessary steps.
+        The new design offered a simple and approachable filtering experience for new employees, while maintaining the functionality and flexibility appreciated by tenured store associates.
       </p>
 
       <p className='mb-12 lg:w-3/5'>
-        After testing two design variants with Jewelry Consultants in-store, we&apos;ve taken the features that tested positively to inform the final designs below.
+        I also streamlined outreach and creating outreach reminders by bringing visibility to available contact methods to inform decision-making and remove unnecessary steps.
+      </p>
+
+      
+      <div className='mb-4 px-6 py-6 lg:px-8 lg:py-24 bg-[#F2F2F4] rounded-lg'>
+        <img className='w-full h-auto object-contain rounded-lg' src="/images/clienteling/clienteling-variants.png" alt="Clienteling Variants"/>
+      </div>
+      <p className='mb-12 annotation text-sm'>Two different filter variants we've tested with store associates</p>
+
+      <b className='mb-4 block'>Design Direction</b>
+
+      <p className='mb-6 lg:w-3/5'>
+        We started thinking on how might we make it easier and quicker for store associates to find and act on the right customer profiles.
+      </p>
+
+      <p className='mb-6 lg:w-3/5'>
+        Because how differently filters are used by new and experienced associates, my thought process was to design for progressive disclosure to balance simplicity and flexibility, reorganizing the filter architecture.
+      </p>
+
+      <p className='mb-12 lg:w-3/5'>
+        We explored two directions - a more familiar approach with categorized dropdowns and a more progressive approach with a drawer. After testing them with store associates in-store, we&apos;ve found that the drawer variant was significantly easier to use for both new and tenured associates.
       </p>
 
       <div className='mb-12 py-4 px-6 lg:px-44 lg:py-16 bg-[#F2F2F4] rounded-lg'>
@@ -103,11 +119,10 @@ function ClientelingFilters() {
         With the new customer filters, you can now...
       </p>
       <ul className='mb-12 lg:w-3/5 list-disc'>
-        <li className='mb-2'>Use the search bar to find specific customers by name or contact info</li>
+        <li className='mb-2'>Quickly access the search bar to find specific customers</li>
         <li className='mb-2'>View all filters and apply them from a single drawer</li>
-        <li className='mb-2'>View and filter specific contact methods</li>
-        <li className='mb-2'>Apply multiple filters at the same time</li>
-        <li className='mb-2'>Filter by last outreach activity</li>
+        <li className='mb-2'>Apply multiple filters at once for more personalized outreach</li>
+        <li className='mb-2'>Filter for specific contact methods and last outreach activity</li>
       </ul>
 
 
@@ -151,12 +166,13 @@ function ClientelingFilters() {
 
       <p className='mb-8 annotation text-sm'>Contact methods</p>
 
+
       <p className='mb-4 lg:w-3/5'>
-        JCs can now see the contact methods customers are opted-into and filter for specific methods to schedule a method-specific task.
+        Previously, scheduled tasks had no specific outreach type which required the users to spend additional time to view the customer profile in search of available contact information.
       </p>
 
       <p className='mb-12 lg:w-3/5'>
-        Previously, scheduled tasks had a &apos;generic outreach&apos; type which required the JC to spend additional time to view the customer profile in search of available contact information.
+        Store associates can now see the contact methods customers are opted-into and filter them to schedule a method-specific task.
       </p>
 
 
@@ -168,7 +184,7 @@ function ClientelingFilters() {
       </div>
       <p className='mb-8 annotation text-sm'>Faceted filters</p>
 
-      <p className='mb-16 lg:w-3/5'>
+      <p className='mb-12 lg:w-3/5'>
         Multiple filters can be applied at the same time, allowing for a more personalized outreach. The numbers next to each filter update with each selection, representing the customers who belong to that segment.
       </p>
 
@@ -185,7 +201,7 @@ function ClientelingFilters() {
         One of the pain points was finding when was the last time each customer was contacted to avoid spam.
       </p>
 
-      <p className='mb-16 lg:w-3/5'>
+      <p className='mb-12 lg:w-3/5'>
         I added a new Last Outreach filter which allows to filter customers who haven&apos;t been contacted in a while and also exclude customers who already have a scheduled outreach task.
       </p>
 
@@ -202,7 +218,11 @@ function ClientelingFilters() {
       <div className='mb-12 pt-12 px-28 lg:px-[34%] lg:pt-24 bg-[#F2F2F4] rounded-lg'>
         <img className='w-full h-auto object-contain rounded-lg' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20Icon.png?alt=media&token=9ed1018c-8bce-4c66-92ae-de4f47c60592" alt="Digital Store System" />
       </div>
-
+      <b className='mb-4 block'>Results</b>
+      <p className='mb-12 lg:w-3/5'>
+        Six months after launch, we saw a 750% increase in email engagement, 50% increase in outreach tasks engagement and received positive feedback from associates that new filters felt faster to use and more intuitive.
+      </p>
+      
       <b className='mb-4 block'>Takeaways</b>
       <p className='mb-4 lg:w-3/5'>
         This project was part of a larger initiative and it was a great learning opportunity because of its broad scope and complexity. Here are some of the personal learnings:
@@ -211,7 +231,6 @@ function ClientelingFilters() {
       <ul className='mb-6 lg:w-3/5 list-disc'>
         <li className='mb-4'>Understanding how changes to product features can impact the app in the larger context</li>
         <li className='mb-4'>Building and continuing the collaboration momentum with multiple teams on the project from start to finish</li>
-        <li className='mb-4'>Prioritizing effort on the most important features and avoiding scope creep</li>
         <li className='mb-4'>Balancing the needs of new employees and power users</li>
         <li className='mb-4'>Keeping the user testing sessions short, and prototypes simple to retain participant engagement</li>
       </ul>

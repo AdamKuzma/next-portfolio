@@ -59,7 +59,7 @@ function AmorComponents() {
         </p>
 
         <div className='mb-12 py-6 px-4 lg:py-12 lg:px-12 bg-neutral-100 rounded-lg'>
-            <img className='' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FAmor-Exp-Design-System.png?alt=media&token=25728fc3-2886-4869-a75a-3dc056bd4ca0" alt="Amor Components" />
+            <img className='' src="/images/amor/amor-designsystem.png" alt="Amor Components" />
         </div>
 
 
@@ -141,7 +141,7 @@ function AmorComponents() {
 
         <b className='mb-4 block'>Impact</b>
         <p className='mb-8 lg:w-3/5'>
-            Amor Content Components have empowered everyone in the organization to launch new marketing pages rapidly and consistently, improving our website&apos;s interface with confidence. Two years after their release, we&apos;ve have recorded over 4,000 component instances used across our websites.
+            Amor Content Components have empowered everyone in the organization to launch new marketing pages rapidly and consistently, improving our website&apos;s interface with confidence. Year after their release, we&apos;ve have recorded over 4,000 component instances used across our websites.
         </p>
 
       <SayHi></SayHi>

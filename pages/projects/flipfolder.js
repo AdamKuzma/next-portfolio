@@ -92,11 +92,11 @@ function FlipFolder() {
       </p>
 
       <div className="mb-3 flex lg:flex-row flex-col rounded-lg gap-10 fade-in delay-5">
-        <div className="flex-1 rounded-lg relative lg:h-[541px] overflow-hidden bg-neutral-100">
+        <div className="flex-1 rounded-lg relative overflow-hidden bg-neutral-100">
             <video className="lazyload rounded-lg" ref={el => videoRefs.current[1] = el} muted autoPlay loop playsInline preload="auto" poster="">
                 <source
                   type="video/mp4"
-                  src="/videos/flipfolder/ff-featured.mp4"></source>
+                  src="/videos/flipfolder/ff-featured-wide.mp4"></source>
             </video>
         </div>
       </div>
