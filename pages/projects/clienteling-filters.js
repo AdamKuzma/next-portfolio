@@ -50,7 +50,7 @@ function ClientelingFilters() {
       </p>
 
       <p className='mb-12 lg:w-3/5 fade-in delay-4'>
-        Through customer search, associates can find the right customers visiting stores or for outreach initiatives - for example to promote a new line of engagement rings to those who would be interested.
+        Through Clienteling search, associates can find the right customers visiting stores or target them for outreach initiatives - for example to promote a new line of engagement rings to those who would be interested.
       </p>
 
       <div className='mb-12 px-12 py-6 lg:px-24 lg:py-16 bg-[#F2F2F4] rounded-lg'>
@@ -64,13 +64,13 @@ function ClientelingFilters() {
       {/* Problem */}
 
       <b className='mb-4 block'>Problem</b>
-      <p className='mb-12 lg:w-3/5'>
-        As the search capabilities kept evolving and new filters were added, their organization started to become unintuitive. New store associates faced a steep learning curve, while experienced store associates asked for more filtering options. Many of the frequently used filters were hidden under the second navigation level, which led to poor discoverability.
+      <p className='mb-4 lg:w-3/5'>
+        As the search capabilities kept evolving and new filters were added, the search experience became increasingly cluttered and harder to navigate. Many of the frequently used filters were hidden under the second navigation level, which led to poor discoverability.
       </p>
 
-      {/* <p className='mb-12 lg:w-3/5'> 
-        Once the filters for a specific customer segment were applied, there was no visibility to the contact method each customer was opted into, meaning the JCs would often find out that some of the selected customers don&apos;t have an email address in their records.
-      </p> */}
+      <p className='mb-12 lg:w-3/5'> 
+         New store associates struggled to find the right customers quickly, while experienced associates grew frustrated by the lack of easy access to key filters, slowing down outreach efforts and missing sales opportunities.
+      </p> 
 
       <div className='mb-12 px-6 py-6 lg:px-44 lg:py-16 bg-[#F2F2F4] rounded-lg'>
         <img className='w-full h-auto object-contain rounded-lg' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FClienteling%20-%20Current%20Filters.png?alt=media&token=90228814-411d-4477-8d71-eff32cc3a03e" alt="Digital Store System" />
@@ -79,19 +79,18 @@ function ClientelingFilters() {
       {/* Solution */}
 
       <b className='mb-4 block'>Solution</b>
-      <p className='mb-6 lg:w-3/5'>
-        In collaboration with product managers, researchers, and engineers, I led the design for the new customer filters for store associates from discovery to implementation.
-      </p>
-
-      <p className='mb-6 lg:w-3/5'>
-        The new design offered a simple and approachable filtering experience for new employees, while maintaining the functionality and flexibility appreciated by tenured store associates.
+      <p className='mb-4 lg:w-3/5'>
+        Our goal was to reduce friction and help store associates quickly find and act on the right customer profiles, making personalized outreach faster, easier, and more effective.
       </p>
 
       <p className='mb-12 lg:w-3/5'>
-        I also streamlined outreach and creating outreach reminders by bringing visibility to available contact methods to inform decision-making and remove unnecessary steps.
+        I led the end-to-end redesign of the customer filtering experience in collaboration with product managers, researchers, and engineers to simplify the search experience, improve filter accessibility, and drive better outreach outcomes.
       </p>
 
-      
+      {/* <p className='mb-12 lg:w-3/5'>
+        I also streamlined outreach and creating outreach tasks by bringing visibility to available contact methods to inform decision-making and remove unnecessary steps.
+      </p> */}
+
       <div className='mb-4 px-6 py-6 lg:px-8 lg:py-24 bg-[#F2F2F4] rounded-lg'>
         <img className='w-full h-auto object-contain rounded-lg' src="/images/clienteling/clienteling-variants.png" alt="Clienteling Variants"/>
       </div>
@@ -100,15 +99,11 @@ function ClientelingFilters() {
       <b className='mb-4 block'>Design Direction</b>
 
       <p className='mb-6 lg:w-3/5'>
-        We started thinking on how might we make it easier and quicker for store associates to find and act on the right customer profiles.
-      </p>
-
-      <p className='mb-6 lg:w-3/5'>
-        Because how differently filters are used by new and experienced associates, my thought process was to design for progressive disclosure to balance simplicity and flexibility, reorganizing the filter architecture.
+        Because how differently filters are used by new and experienced associates, my thought process was to design to balance simplicity and flexibility, reorganizing the filter architecture and applying progressive disclosure. 
       </p>
 
       <p className='mb-12 lg:w-3/5'>
-        We explored two directions - a more familiar approach with categorized dropdowns and a more progressive approach with a drawer. After testing them with store associates in-store, we&apos;ve found that the drawer variant was significantly easier to use for both new and tenured associates.
+        I explored two directions - a more familiar approach with categorized dropdowns and a progressive approach with a drawer. After testing them with store associates in-store, we&apos;ve found that the drawer variant was significantly easier to use for both new and tenured associates. 
       </p>
 
       <div className='mb-12 py-4 px-6 lg:px-44 lg:py-16 bg-[#F2F2F4] rounded-lg'>
@@ -219,8 +214,13 @@ function ClientelingFilters() {
         <img className='w-full h-auto object-contain rounded-lg' src="https://firebasestorage.googleapis.com/v0/b/portfolio-d1c10.appspot.com/o/projects%2FCL%20Icon.png?alt=media&token=9ed1018c-8bce-4c66-92ae-de4f47c60592" alt="Digital Store System" />
       </div>
       <b className='mb-4 block'>Results</b>
+
+      <p className='mb-6 lg:w-3/5'>
+        The new design offered a simple and approachable filtering experience for new employees, while maintaining the functionality and flexibility appreciated by tenured store associates.
+      </p>
+
       <p className='mb-12 lg:w-3/5'>
-        Six months after launch, we saw a 750% increase in email engagement, 50% increase in outreach tasks engagement and received positive feedback from associates that new filters felt faster to use and more intuitive.
+        Through the combination of the changes, six months after launch, we saw a 750% increase in email engagement, 50% increase in outreach tasks engagement and received positive feedback from associates that new filters felt faster to use and more intuitive.
       </p>
       
       <b className='mb-4 block'>Takeaways</b>
