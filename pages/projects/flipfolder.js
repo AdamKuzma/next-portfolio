@@ -181,7 +181,7 @@ function FlipFolder() {
 
       <b className="mb-4">Additional details</b>
       <p className="mb-12 lg:w-3/5">
-        I wrote Swift to create high fidelity prototypes, and took on the role of directly responsible individual to execute on the details and work to ensure this brand new app surface was built with a high level of craftsmanship.
+        I also built Swift prototypes to explore subtle interaction details and raise the overall level of craftsmanship for the new app.
       </p>
 
       <div className="mb-3 flex-1 py-6 px-16 rounded-lg relative overflow-hidden bg-neutral-100">
