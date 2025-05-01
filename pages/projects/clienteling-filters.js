@@ -46,7 +46,7 @@ function ClientelingFilters() {
 
       <b className='mb-4 block fade-in delay-3'>Context</b>
       <p className='mb-6 lg:w-3/5 fade-in delay-3'>
-        Store associates at Signet&apos;s stores use the Clienteling iPad app to build stronger relationships with customers through in-store interactions and personalized outreach. 
+        Store associates at Signet&apos;s stores use the Clienteling iPad app to build stronger relationships with customers through in-store interactions and personalized outreach for over 120M profiles. 
       </p>
 
       <p className='mb-12 lg:w-3/5 fade-in delay-4'>
