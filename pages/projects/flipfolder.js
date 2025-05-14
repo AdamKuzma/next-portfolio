@@ -103,23 +103,25 @@ function FlipFolder() {
 
       <p className="mb-16 annotation text-sm fade-in delay-6">In collaboration with Lynn Tang and J.W. Pepper team</p>
 
-      <b className="mb-4">Background</b>
-      <p className="mb-4 lg:w-3/5">
+      <b className="mb-4 fade-in delay-7">Background</b>
+      <p className="mb-4 lg:w-3/5 fade-in delay-7">
         Since its MVP launch in 2018, FlipFolder prioritized function over form, resulting in an outdated user interface. I partnered with J.W. Pepper, a leading sheet music provider, to modernize the app and create a more polished and intuitive experience.
       </p>
-      <p className="mb-12 lg:w-3/5">
+      <p className="mb-12 lg:w-3/5 fade-in delay-7">
         Through band leader and player interviews, I identified key challenges and opportunities to improve performances.
       </p>
 
+
       <div className="mb-16 flex lg:flex-row flex-col rounded-lg">
-        <div className="flex-1 py-6 rounded-lg relative lg:h-[541px] overflow-hidden bg-neutral-100 flex items-center justify-center">
+        <div className="flex-1 py-4 rounded-lg relative lg:h-[541px] overflow-hidden bg-neutral-100 flex items-center justify-center">
             <video className="lazyload rounded-lg h-full w-full object-contain" ref={el => videoRefs.current[2] = el} muted autoPlay loop playsInline preload="auto" poster="">
                 <source
                   type="video/mp4"
-                  src="/videos/flipfolder/ff-performances.mp4"></source>
+                  src="/videos/flipfolder/ff-performances-sped.mp4"></source>
             </video>
         </div>
       </div>
+
 
       <b className="mb-4">Visibility through interaction</b>
       <p className="mb-4 lg:w-3/5">
@@ -170,6 +172,16 @@ function FlipFolder() {
       <p className="mb-12 lg:w-3/5">
         Besides the aesthetic choice, dark mode improves battery life by 30-50% for extended performances and enhances music sheet readability in bright outdoor environments, ensuring we cater to specific needs of band players.
       </p>
+
+      {/* <div className="mb-8 flex lg:flex-row flex-col rounded-lg">
+        <div className="flex-1 py-4 rounded-lg relative lg:h-[541px] overflow-hidden bg-neutral-100 flex items-center justify-center">
+            <video className="lazyload rounded-lg h-full w-full object-contain" ref={el => videoRefs.current[3] = el} muted autoPlay loop playsInline preload="auto" poster="">
+                <source
+                  type="video/mp4"
+                  src="/videos/flipfolder/ff-welcome.mp4"></source>
+            </video>
+        </div>
+      </div> */}
 
       <div className="mb-12 flex-1 py-16 rounded-lg relative overflow-hidden bg-neutral-100">
         <img className="" src="/images/flipfolder/ff-darkmode.png" alt="FlipFolder Dark Mode" />

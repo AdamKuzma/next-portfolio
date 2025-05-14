@@ -21,6 +21,8 @@
     "react-intersection-observer": "^9.13.0"
   },
   "devDependencies": {
+    "@babel/parser": "^7.27.1",
+    "@babel/traverse": "^7.27.1",
     "@svgr/webpack": "^8.1.0",
     "@types/node": "^20.14.9",
     "@types/react": "^18.3.3",
