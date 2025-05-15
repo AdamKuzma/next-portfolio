@@ -111,6 +111,24 @@ function FlipFolder() {
         Through band leader and player interviews, I identified key challenges and opportunities to improve performances.
       </p>
 
+      <div className="mb-12 flex lg:flex-row flex-col rounded-lg">
+        <div className="flex-1 py-4 rounded-lg relative lg:h-[541px] overflow-hidden bg-neutral-100 flex items-center justify-center">
+            <video className="lazyload rounded-lg h-full w-full object-contain" ref={el => videoRefs.current[3] = el} muted autoPlay loop playsInline preload="auto" poster="">
+                <source
+                  type="video/mp4"
+                  src="/videos/flipfolder/ff-welcome.mp4"></source>
+            </video>
+        </div>
+      </div>
+
+      <b className="mb-4 fade-in delay-7">Onboarding</b>
+      <p className="mb-4 lg:w-3/5 fade-in delay-7">
+        The app originally lacked onboarding, leaving new users unsure how to get started. Band leaders had to manually guide players and frequently switch between the app and web platform to manage their band.
+      </p>
+      <p className="mb-16 lg:w-3/5 fade-in delay-7">
+        The new onboarding flow clarified the different roles of band leaders and players, and guided users through setting up their account on the web before using the app.
+      </p>
+
 
       <div className="mb-16 flex lg:flex-row flex-col rounded-lg">
         <div className="flex-1 py-4 rounded-lg relative lg:h-[541px] overflow-hidden bg-neutral-100 flex items-center justify-center">
@@ -173,15 +191,6 @@ function FlipFolder() {
         Besides the aesthetic choice, dark mode improves battery life by 30-50% for extended performances and enhances music sheet readability in bright outdoor environments, ensuring we cater to specific needs of band players.
       </p>
 
-      {/* <div className="mb-8 flex lg:flex-row flex-col rounded-lg">
-        <div className="flex-1 py-4 rounded-lg relative lg:h-[541px] overflow-hidden bg-neutral-100 flex items-center justify-center">
-            <video className="lazyload rounded-lg h-full w-full object-contain" ref={el => videoRefs.current[3] = el} muted autoPlay loop playsInline preload="auto" poster="">
-                <source
-                  type="video/mp4"
-                  src="/videos/flipfolder/ff-welcome.mp4"></source>
-            </video>
-        </div>
-      </div> */}
 
       <div className="mb-12 flex-1 py-16 rounded-lg relative overflow-hidden bg-neutral-100">
         <img className="" src="/images/flipfolder/ff-darkmode.png" alt="FlipFolder Dark Mode" />
