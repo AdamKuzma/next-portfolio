@@ -113,7 +113,7 @@ function FlipFolder() {
 
       <div className="mb-12 flex lg:flex-row flex-col rounded-lg">
         <div className="flex-1 py-4 rounded-lg relative lg:h-[541px] overflow-hidden bg-neutral-100 flex items-center justify-center">
-            <video className="lazyload rounded-lg h-full w-full object-contain" ref={el => videoRefs.current[3] = el} muted autoPlay loop playsInline preload="auto" poster="">
+            <video className="lazyload rounded-lg h-full w-full object-contain" ref={el => videoRefs.current[2] = el} muted autoPlay loop playsInline preload="auto" poster="">
                 <source
                   type="video/mp4"
                   src="/videos/flipfolder/ff-welcome.mp4"></source>
@@ -132,7 +132,7 @@ function FlipFolder() {
 
       <div className="mb-16 flex lg:flex-row flex-col rounded-lg">
         <div className="flex-1 py-4 rounded-lg relative lg:h-[541px] overflow-hidden bg-neutral-100 flex items-center justify-center">
-            <video className="lazyload rounded-lg h-full w-full object-contain" ref={el => videoRefs.current[2] = el} muted autoPlay loop playsInline preload="auto" poster="">
+            <video className="lazyload rounded-lg h-full w-full object-contain" ref={el => videoRefs.current[3] = el} muted autoPlay loop playsInline preload="auto" poster="">
                 <source
                   type="video/mp4"
                   src="/videos/flipfolder/ff-performances-sped.mp4"></source>
@@ -151,7 +151,7 @@ function FlipFolder() {
 
       <div className="mb-16 flex lg:flex-row flex-col rounded-lg">
         <div className="flex-1 rounded-lg relative overflow-hidden flex items-end">
-            <video className="lazyload rounded-lg w-full" ref={el => videoRefs.current[3] = el} muted autoPlay loop playsInline preload="auto" poster="">
+            <video className="lazyload rounded-lg w-full" ref={el => videoRefs.current[4] = el} muted autoPlay loop playsInline preload="auto" poster="">
                 <source
                   type="video/mp4"
                   src="/videos/flipfolder/ff-status.mp4"></source>
@@ -206,7 +206,13 @@ function FlipFolder() {
       </p>
 
       <div className="mb-3 flex-1 py-6 px-16 rounded-lg relative overflow-hidden bg-neutral-100">
-        <img className="" src="/images/flipfolder/ff-swiftprototype.png" alt="FlipFolder Swift Prototype" />
+        <div className="flex-1 rounded-lg relative overflow-hidden flex items-end">
+              <video className="lazyload rounded-lg w-full" ref={el => videoRefs.current[5] = el} muted autoPlay loop playsInline preload="auto" poster="">
+                  <source
+                    type="video/mp4"
+                    src="/videos/flipfolder/ff-prototypeB.mp4"></source>
+              </video>
+          </div>
       </div>
 
       <p className="mb-16 annotation text-sm">Main view and starting performance prototype</p>

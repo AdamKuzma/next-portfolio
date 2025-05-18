@@ -42,14 +42,14 @@ function IOSInteractions() {
 
       <div className='mb-3 flex lg:flex-row flex-col rounded-lg gap-10 fade-in delay-5'>
         <div className='flex-1 rounded-lg relative lg:h-[541px] overflow-hidden'>
-            <video className='lazyload rounded-lg' ref={el => videoRefs.current[1] = el} muted autoplay loop playsInline preload="auto" poster=''>
+            <video className='lazyload rounded-lg' ref={el => videoRefs.current[1] = el} muted autoplay loop playsInline preload="auto" poster='/images/ios-interactions/ios1.png'>
                 <source
                   type='video/mp4'
                   src='/videos/GyroLightA.mp4'></source>
             </video>
         </div>
         <div className='flex-1 rounded-lg relative lg:h-[541px] overflow-hidden'>
-            <video className='lazyload rounded-lg mt-[-15px]' ref={el => videoRefs.current[2] = el} muted autoplay loop playsInline preload="auto" poster=''>
+            <video className='lazyload rounded-lg mt-[-15px]' ref={el => videoRefs.current[2] = el} muted autoplay loop playsInline preload="auto" poster='/images/ios-interactions/ios2.png'>
                 <source
                   type='video/mp4'
                   src='/videos/GyroDarkA.mp4'></source>
@@ -58,20 +58,20 @@ function IOSInteractions() {
       </div>
       <p className='mb-8 annotation text-sm'>Gyroscope device motion interaction</p>
 
-      <p className='mb-24 lg:w-3/5'>
+      <p className='mb-16 lg:w-3/5'>
         Payment card concept that is leveraging iOS gyroscope capabilities to tilt the card as you rotate the phone. Here, I also experimented with simulated lighting and holographic shimmer effect which dynamically changes with device motion.
       </p>
 
       <div className='mb-3 flex lg:flex-row flex-col rounded-lg gap-10'>
-        <div className='flex-1 rounded-lg relative lg:h-[580px] overflow-hidden'>
-            <video className='lazyload rounded-lg mt-[-70px]' ref={el => videoRefs.current[3] = el} muted autoplay loop playsInline preload="auto" poster=''>
+        <div className='flex-1 rounded-lg relative lg:h-[560px] overflow-hidden'>
+            <video className='lazyload rounded-lg mt-[-90px]' ref={el => videoRefs.current[3] = el} muted autoplay loop playsInline preload="auto" poster='/images/ios-interactions/ios3.png'>
                 <source
                   type='video/mp4'
                   src='/videos/PortalClosing.mp4'></source>
             </video>
         </div>
-        <div className='flex-1 rounded-lg relative lg:h-[580px] overflow-hidden'>
-            <video className='lazyload rounded-lg mt-[-70px]' ref={el => videoRefs.current[4] = el} muted autoplay loop playsInline preload="auto" poster=''>
+        <div className='flex-1 rounded-lg relative lg:h-[560px] overflow-hidden'>
+            <video className='lazyload rounded-lg mt-[-90px]' ref={el => videoRefs.current[4] = el} muted autoplay loop playsInline preload="auto" poster='/images/ios-interactions/ios4.png'>
                 <source
                   type='video/mp4'
                   src='/videos/SwipingShort.mp4'></source>
@@ -80,8 +80,26 @@ function IOSInteractions() {
       </div>
       <p className='mb-8 annotation text-sm'>Masked view transitions</p>
 
-      <p className='mb-12 lg:w-3/5'>
-        Masked views exploration, revealing additional information on tap. To create a sense of depth, the cards visually lift and lower along the Z-axis with smooth scale transitions. Details are dismissed by tapping the close button or swiping down beyond a specific threshold, creating a more natural interaction.
+      <p className='mb-16 lg:w-3/5'>
+        Masked views exploration. To create a sense of depth, the cards visually lift and lower along the Z-axis with smooth scale transitions. Details are dismissed by swiping down beyond a threshold, creating a more natural interaction.
+      </p>
+
+      <div className='mb-3 flex lg:flex-row flex-col rounded-lg gap-10'>
+        <div className='flex-1 rounded-lg relative lg:h-[560px] overflow-hidden'>
+            <video className='lazyload rounded-lg mt-[-30px]' ref={el => videoRefs.current[5] = el} muted autoplay loop playsInline preload="auto" poster='/images/ios-interactions/ios5.png'>
+                <source
+                  type='video/mp4'
+                  src='/videos/ios-interactions/LongPressA.mp4'></source>
+            </video>
+        </div>
+        <div className='flex-1 rounded-lg relative overflow-hidden'>
+            
+        </div>
+      </div>
+      <p className='mb-8 annotation text-sm'>Long press interaction</p>
+
+      <p className='mb-16 lg:w-1/2'>
+        Long press interaction in a song list to reveal additional options, leveraging Context Menu modifier in SwiftUI.
       </p>
 
       <p className='mb-12 lg:w-3/5'>
