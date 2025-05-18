@@ -4,7 +4,7 @@ import 'lazysizes';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import Head from 'next/head';
-import NavTest from '../components/NavTest';
+import Nav from '../components/Nav';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <SpeedInsights/>
       <Analytics/>
-      <NavTest />
+      <Nav />
       <Component {...pageProps} />
     </>
   );
