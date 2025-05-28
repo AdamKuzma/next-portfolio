@@ -359,3 +359,10 @@
 .line-wrapper {
   display: block; /* Ensure lines are block elements to break lines */
 }
+
+.centered-nav-override .navigationWrapper {
+  position: static !important;
+  bottom: auto !important;
+  left: auto !important;
+  transform: none !important;
+}

@@ -118,7 +118,7 @@ function MusicPerformanceApp() {
             The project focused on modernizing the visual design, enhancing usability, and refining interaction patterns across devices. I also built Swift prototypes to explore subtle interaction details and raise the overall level of craftsmanship.
         </p>
         <p className='mb-6 lg:w-3/5 fade-in delay-7'>
-            To respect client confidentiality, the full case study is available privately upon request.
+            To respect client confidentiality, the full case study is available privately <a href="/projects/flipfolder" className='underline'>here</a>.
         </p>
 
       <SayHi></SayHi>

@@ -116,7 +116,7 @@ function FlipFolder() {
             <video className="lazyload rounded-lg h-full w-full object-contain" ref={el => videoRefs.current[2] = el} muted autoPlay loop playsInline preload="auto" poster="">
                 <source
                   type="video/mp4"
-                  src="/videos/flipfolder/ff-welcome.mp4"></source>
+                  src="/videos/flipfolder/ff-onboarding.mp4"></source>
             </video>
         </div>
       </div>
