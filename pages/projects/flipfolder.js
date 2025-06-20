@@ -215,7 +215,7 @@ function FlipFolder() {
           </div>
       </div>
 
-      <p className="mb-16 annotation text-sm">Main view and starting performance prototype</p>
+      <p className="mb-16 annotation text-sm">Long press context menu interaction prototype</p>
 
       <p className="mb-4 lg:w-3/5">
         FlipFolder is a product of the hard work and collaboration with amazing teammates at J.W. Pepper. The new app will be available in App Store at the end of 2025.
