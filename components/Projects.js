@@ -7,6 +7,7 @@ function Projects({ scrolled, useStaticVariant }) {
   const [position, setPosition] = useState({ left: 0, top: 0, width: 0, height: 0, opacity: 0 });
 
   const projects = [
+    { name: 'Verizon Retail AI', year: '2025', type: 'Product design', video: '/videos/verizon/verizonFeatured.mp4', linkUrl: '/projects/verizon-retail' },
     { name: 'Music Performance App', year: '2025', type: 'Product design', video: '/videos/flipfolder/ff-featured.mp4', linkUrl: '/projects/music-performance-app' },
     { name: 'iOS Interaction Prototypes', year: '2024', type: 'Interaction design, prototyping', video: '/videos/GyroLightA.mp4', linkUrl: '/projects/ios-interactions' },
     { name: 'Clienteling Filters', year: '2024', type: 'Product design', img: '/images/CLFeaturedB.png', linkUrl: '/projects/clienteling-filters' },
