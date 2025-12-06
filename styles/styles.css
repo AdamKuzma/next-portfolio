@@ -43,7 +43,7 @@
 
 .project {
   transition: all 0.3s ease-in-out;
-  padding: 4px 16px;
+  padding: 6px 16px;
   border-radius: 8px;
   margin-left: -16px;
 }
@@ -59,7 +59,9 @@
 }
 
 .project-cursor {
-  background: var(--background-secondary);
+  background: var(--glass-bg);
+  border: 1px solid var(--background-secondary);
+  box-shadow: 0 5px 8px -4px rgba(30, 30, 40, 0.15);
 }
 
 /* Initial state of the image with blur and opacity */
@@ -93,7 +95,7 @@
 
   .navigation {
     background: var(--menu-bg);
-    border: solid 1px var(--menu-border);
+    border: solid 1px var(--background-secondary);
     border-radius: 40px;
     text-align: center;
     padding: 3px 4px;
@@ -149,7 +151,9 @@
   }
 
   .navigationHover, .navigation ul li a:hover {
-    background-color: var(--menu-hover-bg);
+    background-color: var(--background-primary);
+    border: 1px solid var(--background-secondary);
+    box-shadow: 0 5px 8px -4px rgba(30, 30, 40, 0.15);
     margin: 2px 0px;
     height: calc(100% - 6px);
     border-radius: 40px;
@@ -365,4 +369,8 @@
   bottom: auto !important;
   left: auto !important;
   transform: none !important;
+}
+
+.project-item {
+  padding-bottom: 0.5rem; /* Same as mb-2 but as padding */
 }

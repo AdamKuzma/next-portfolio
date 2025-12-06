@@ -29,6 +29,7 @@
 :root.dark {
   --background-primary: #111110;
   --background-secondary: #1D1D1D;
+  --glass-bg: #191917;
   --text-primary: #EEEEEC;
   --text-body: #EEEEEC;
   --text-secondary: #B5B3AD;
@@ -42,6 +43,7 @@
 
 :root.light {
   --background-primary: #FFF;
+  --glass-bg: #FFF;
   --background-secondary: #F4F4F5;
   --text-primary: #000;
   --text-body: #2a2a2a;

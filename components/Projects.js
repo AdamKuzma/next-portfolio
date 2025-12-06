@@ -1,10 +1,12 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 function Projects({ scrolled, useStaticVariant }) {
   const [hoveredProject, setHoveredProject] = useState(null);
   const [position, setPosition] = useState({ left: 0, top: 0, width: 0, height: 0, opacity: 0 });
+  const cursorRef = useRef(null);
+  const magneticOffsetRef = useRef({ x: 0, y: 0 });
 
   const projects = [
     { name: 'Music Performance App', year: '2025', type: 'Product design', video: '/videos/flipfolder/ff-featured.mp4', linkUrl: '/projects/music-performance-app' },
@@ -27,7 +29,8 @@ function Projects({ scrolled, useStaticVariant }) {
               ...pv,
               opacity: 0,
             }));
-            setHoveredProject(null); // Ensure hoveredProject is reset
+            setHoveredProject(null);
+            magneticOffsetRef.current = { x: 0, y: 0 };
           }}
           className='relative flex flex-col items-start'
         >
@@ -36,17 +39,24 @@ function Projects({ scrolled, useStaticVariant }) {
              ? `delay-${index + 3}`
              : `delay-${index + 3}h`;
              return (
-            <Tab key={index} project={project} setPosition={setPosition} setHoveredProject={setHoveredProject}>
+            <Tab 
+              key={index} 
+              project={project} 
+              setPosition={setPosition} 
+              setHoveredProject={setHoveredProject}
+              cursorRef={cursorRef}
+              magneticOffsetRef={magneticOffsetRef}
+            >
               <Link href={project.linkUrl}>
                 <div className={`project cursor-pointer fade-in ${delayClass} inline-block`}>
                   <p className='relative project-name'>{project.name}</p>
-                  <p className='relative project-details'>{project.year} - {project.type}</p>
+                  <p className='relative project-details'>{project.year} · {project.type}</p>
                 </div>
               </Link>
             </Tab>
             );
           })}
-          <Cursor position={position} />
+          <Cursor position={position} cursorRef={cursorRef} magneticOffsetRef={magneticOffsetRef} />
         </ul>
       </div>
 
@@ -74,18 +84,129 @@ function Projects({ scrolled, useStaticVariant }) {
   );
 }
 
-const Tab = ({ children, project, setPosition, setHoveredProject }) => {
-  const ref = useRef(null);
+const Tab = ({ children, project, setPosition, setHoveredProject, cursorRef, magneticOffsetRef }) => {
+  const containerRef = useRef(null);
+  const contentRef = useRef(null);
+  const rafIdRef = useRef(null);
+  
+  // Separate position tracking for content (menu element)
+  const contentTargetPosRef = useRef({ x: 0, y: 0 });
+  const contentCurrentPosRef = useRef({ x: 0, y: 0 });
+  
+  // Separate position tracking for cursor
+  const cursorTargetPosRef = useRef({ x: 0, y: 0 });
+  const cursorCurrentPosRef = useRef({ x: 0, y: 0 });
+
+  const animate = () => {
+    // Smooth interpolation (ease-out effect)
+    const ease = 0.2;
+    
+    // Animate content (menu element) - intensity 3
+    contentCurrentPosRef.current.x += (contentTargetPosRef.current.x - contentCurrentPosRef.current.x) * ease;
+    contentCurrentPosRef.current.y += (contentTargetPosRef.current.y - contentCurrentPosRef.current.y) * ease;
+
+    // Animate cursor - intensity 5
+    cursorCurrentPosRef.current.x += (cursorTargetPosRef.current.x - cursorCurrentPosRef.current.x) * ease;
+    cursorCurrentPosRef.current.y += (cursorTargetPosRef.current.y - cursorCurrentPosRef.current.y) * ease;
+
+    // Apply transform directly to content (no React re-render!)
+    if (contentRef.current) {
+      contentRef.current.style.transform = `translate(${contentCurrentPosRef.current.x}px, ${contentCurrentPosRef.current.y}px)`;
+    }
+
+    // Update shared magnetic offset for cursor
+    magneticOffsetRef.current = { 
+      x: cursorCurrentPosRef.current.x, 
+      y: cursorCurrentPosRef.current.y 
+    };
+
+    // Update cursor directly
+    if (cursorRef.current) {
+      cursorRef.current.style.transform = `translate(${cursorCurrentPosRef.current.x}px, ${cursorCurrentPosRef.current.y}px)`;
+    }
+
+    // Continue animation if still moving (check both content and cursor)
+    const contentDx = Math.abs(contentTargetPosRef.current.x - contentCurrentPosRef.current.x);
+    const contentDy = Math.abs(contentTargetPosRef.current.y - contentCurrentPosRef.current.y);
+    const cursorDx = Math.abs(cursorTargetPosRef.current.x - cursorCurrentPosRef.current.x);
+    const cursorDy = Math.abs(cursorTargetPosRef.current.y - cursorCurrentPosRef.current.y);
+    
+    if (contentDx > 0.01 || contentDy > 0.01 || cursorDx > 0.01 || cursorDy > 0.01) {
+      rafIdRef.current = requestAnimationFrame(animate);
+    } else {
+      rafIdRef.current = null;
+    }
+  };
+
+  const parallaxIt = (e) => {
+    if (!containerRef.current) return;
+
+    const container = containerRef.current;
+    const rect = container.getBoundingClientRect();
+    
+    const relX = e.clientX - rect.left;
+    const relY = e.clientY - rect.top;
+    
+    const containerWidth = rect.width;
+    const containerHeight = rect.height;
+    
+    const centerX = containerWidth / 2;
+    const centerY = containerHeight / 2;
+    const dx = relX - centerX;
+    const dy = relY - centerY;
+    
+    const maxDimension = Math.max(containerWidth, containerHeight);
+    
+    const normalizedX = dx / maxDimension;
+    const normalizedY = dy / maxDimension;
+    
+    // Content (menu element) - intensity 3
+    const contentX = normalizedX * 2;
+    const contentY = normalizedY * 2;
+    
+    // Cursor - intensity 5
+    const cursorX = normalizedX * 10;
+    const cursorY = normalizedY * 20;
+
+    // Update targets separately
+    contentTargetPosRef.current = { x: contentX, y: contentY };
+    cursorTargetPosRef.current = { x: cursorX, y: cursorY };
+
+    // Start animation loop if not already running
+    if (!rafIdRef.current) {
+      rafIdRef.current = requestAnimationFrame(animate);
+    }
+  };
+
+  const handleMouseMove = (e) => {
+    parallaxIt(e);
+  };
+
+  const handleMouseOut = () => {
+    contentTargetPosRef.current = { x: 0, y: 0 };
+    cursorTargetPosRef.current = { x: 0, y: 0 };
+    if (!rafIdRef.current) {
+      rafIdRef.current = requestAnimationFrame(animate);
+    }
+  };
+
+  useEffect(() => {
+    return () => {
+      if (rafIdRef.current) {
+        cancelAnimationFrame(rafIdRef.current);
+      }
+    };
+  }, []);
 
   return (
     <li
-      ref={ref}
+      ref={containerRef}
       onMouseEnter={() => {
-        if (!ref.current) return;
+        if (!containerRef.current) return;
 
-        const { width, height, top, left } = ref.current.getBoundingClientRect();
-        const parentTop = ref.current.offsetParent.getBoundingClientRect().top;
-        const parentLeft = ref.current.offsetParent.getBoundingClientRect().left;
+        const { width, height, top, left } = containerRef.current.getBoundingClientRect();
+        const parentTop = containerRef.current.offsetParent.getBoundingClientRect().top;
+        const parentLeft = containerRef.current.offsetParent.getBoundingClientRect().left;
 
         setPosition({
           width,
@@ -94,17 +215,71 @@ const Tab = ({ children, project, setPosition, setHoveredProject }) => {
           left: left - parentLeft,
           opacity: 1,
         });
-        setHoveredProject(project.img || project.video); // Set hoveredProject to the current project media
+        setHoveredProject(project.img || project.video);
       }}
-      className='mb-2 project relative cursor-pointer inline-block z-20'
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseOut}
+      className='pb-4 project relative cursor-pointer inline-block z-20'
     >
-      {children}
+      <div
+        ref={contentRef}
+        style={{ display: 'inline-block', willChange: 'transform' }}
+      >
+        {children}
+      </div>
     </li>
   );
 };
 
-const Cursor = ({ position }) => {
-  return <motion.div animate={position} className='project-cursor absolute rounded-lg z-0' />;
+const Cursor = ({ position, cursorRef, magneticOffsetRef }) => {
+  // Reduce cursor height by 4px (2px top + 2px bottom) and adjust top by 2px
+  const adjustedHeight = Math.max(0, position.height - 8);
+  const adjustedTop = position.top + 4;
+
+  return (
+    <motion.div
+      ref={cursorRef}
+      animate={{
+        left: position.left,
+        top: adjustedTop,
+        width: position.width,
+        height: adjustedHeight,
+        opacity: position.opacity,
+      }}
+      transition={{
+        left: {
+          type: "spring",
+          stiffness: 180,
+          damping: 20,
+          mass: 0.7,
+        },
+        top: {
+          type: "spring",
+          stiffness: 180,
+          damping: 20,
+          mass: 0.7,
+        },
+        width: {
+          type: "spring",
+          stiffness: 180,
+          damping: 20,
+          mass: 0.7,
+        },
+        height: {
+          type: "spring",
+          stiffness: 180,
+          damping: 20,
+          mass: 0.7,
+        },
+        opacity: {
+          duration: 0.6,
+          ease: "easeOut",
+        },
+      }}
+      style={{ willChange: 'transform', transformOrigin: 'center' }}
+      className='project-cursor absolute rounded-2xl z-0'
+    />
+  );
 };
 
 export default Projects;
