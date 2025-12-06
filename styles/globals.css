@@ -53,7 +53,7 @@
   --gray1: #ced0d4;
   --menu-bg: rgba(252, 252, 252, 0.65);
   --menu-hover-bg: rgba(241, 241, 241, .95);
-  --menu-border: rgba(229, 229, 229, .8);
+  --menu-border: rgba(229, 229, 229, .5);
 }
 
 :root.dark #icon-sun {
@@ -243,7 +243,7 @@ footer p {
 /* Container */
 
 .container {
-  width: 920px;
+  width: 880px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -254,7 +254,7 @@ footer p {
 @media (max-width: 1200px) {
   .container {
     width: 100%;
-    max-width: 920px;
+    max-width: 880px;
   }
 }
 

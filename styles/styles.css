@@ -87,7 +87,7 @@
 
 .navigationWrapper {
     position: fixed;
-    bottom: 32px;
+    bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -95,11 +95,11 @@
 
   .navigation {
     background: var(--menu-bg);
-    border: solid 1px var(--background-secondary);
+    border: solid 1px var(--menu-border);
     border-radius: 40px;
     text-align: center;
     padding: 3px 4px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .02), 0 4px 8px rgba(0, 0, 0, .04);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .02), 0 4px 8px rgba(0, 0, 0, .05);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,8 +152,8 @@
 
   .navigationHover, .navigation ul li a:hover {
     background-color: var(--background-primary);
-    border: 1px solid var(--background-secondary);
-    box-shadow: 0 5px 8px -4px rgba(30, 30, 40, 0.15);
+    border: 1px solid var(--menu-border);
+    box-shadow: 0 3px 8px -4px rgba(30, 30, 40, 0.3);
     margin: 2px 0px;
     height: calc(100% - 6px);
     border-radius: 40px;
