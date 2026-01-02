@@ -51,7 +51,7 @@ const Home = () => {
                   <>
                     <TypingAnimation onComplete={() => setTypingCompleted(true)} />
                     <p className='mt-10 max-w-lg fade-in delay-1h'>
-                      I’m a digital product designer, working at the intersection ↔ of design and engineering, passionate about crafting thoughtful human interactions with technology.
+                      I design and build digital products at the intersection ↔ of design and engineering, focused on thoughtful interactions and scalable user experiences.                    
                     </p>
                   </>
 
@@ -65,7 +65,7 @@ const Home = () => {
                     <p className='typing-cursor inline-block'>Product Designer.</p>
                   </div>
                   <p className='mt-10 max-w-lg fade-in delay-2'>
-                    I’m a digital product designer, working at the intersection ↔ of design and engineering, passionate about crafting thoughtful human interactions with technology.
+                    I design and build digital products at the intersection ↔ of design and engineering, focused on thoughtful interactions and scalable user experiences.
                   </p>
                 </>
               )}
