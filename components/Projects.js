@@ -9,6 +9,7 @@ function Projects({ scrolled, useStaticVariant }) {
   const magneticOffsetRef = useRef({ x: 0, y: 0 });
 
   const projects = [
+    { name: 'Verizon Retail AI', year: '2025', type: 'Product design', video: '/videos/verizon/VerizonAI.mp4', linkUrl: '/projects/verizon-retail' },
     { name: 'Music Performance App', year: '2025', type: 'Product design', video: '/videos/flipfolder/ff-featured.mp4', linkUrl: '/projects/music-performance-app' },
     { name: 'iOS Interaction Prototypes', year: '2024', type: 'Interaction design, prototyping', video: '/videos/GyroLightA.mp4', linkUrl: '/projects/ios-interactions' },
     { name: 'Clienteling Filters', year: '2024', type: 'Product design', img: '/images/CLFeaturedB.png', linkUrl: '/projects/clienteling-filters' },

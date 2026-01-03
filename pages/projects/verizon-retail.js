@@ -46,11 +46,10 @@ function VerizonRetail() {
                         loop 
                         playsInline 
                         preload="auto" 
-                        poster='/images/flipfolder/ff-featured-lazy.png'
                     >
                         <source
                             type='video/mp4'
-                            src='/videos/verizon/VerizonMain.mp4'
+                            src='/videos/verizon/VerizonAI.mp4'
                         ></source>
                     </video>
                 </div>
@@ -59,10 +58,10 @@ function VerizonRetail() {
         
         {/* Project Intro */}
         <p className='mb-6 lg:w-3/5 fade-in delay-5'>
-            I am currently leading design for Verizon’s next-generation retail point-of-sale and connected in-store experience, helping store representatives serve customers faster and with greater transparency.
+          I currently lead design for Verizon&apos;s next-generation retail point-of-sale and in-store experiences, with a focus on AI-assisted workflows for sales recommendations, billing, and complex service flows.
         </p>
         <p className='mb-6 lg:w-3/5 fade-in delay-6'>
-            My work focuses on AI-assisted workflows for sales recommendations, bill support, and complex service journeys—designing for control, clarity, and speed. To respect confidentiality, a detailed case study is available privately on request.
+         A lot of this work is confidential, so I&apos;ve kept the public version high-level. I&apos;m happy to share more details privately.
         </p>
 
       <SayHi></SayHi>
