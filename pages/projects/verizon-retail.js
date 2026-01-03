@@ -61,7 +61,7 @@ function VerizonRetail() {
           I currently lead design for Verizon&apos;s next-generation retail point-of-sale and in-store experiences, with a focus on AI-assisted workflows for sales recommendations, billing, and complex service flows.
         </p>
         <p className='mb-6 lg:w-3/5 fade-in delay-6'>
-         A lot of this work is confidential, so I&apos;ve kept the public version high-level. I&apos;m happy to share more details privately.
+         A lot of this work is confidential - I&apos;m happy to share more details privately.
         </p>
 
       <SayHi></SayHi>
